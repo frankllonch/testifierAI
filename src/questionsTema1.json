@@ -1,0 +1,321 @@
+[
+  {
+    "question": "¿Qué mide la precisión (precision) en un modelo de clasificación?",
+    "options": [
+      "La proporción de verdaderos positivos sobre todas las instancias positivas reales",
+      "La proporción de verdaderos positivos sobre todas las predicciones positivas",
+      "La proporción de verdaderos negativos sobre todas las predicciones negativas",
+      "La proporción de instancias correctamente clasificadas"
+    ],
+    "correct": 1,
+    "explanation": "Precision = TP / (TP + FP); indica cuántas de las predicciones positivas fueron correctas."
+  },
+  {
+    "question": "¿Qué mide el recall (sensibilidad) en un modelo de clasificación?",
+    "options": [
+      "TP / (TP + FP)",
+      "TN / (TN + FN)",
+      "TP / (TP + FN)",
+      "TN / (TN + FP)"
+    ],
+    "correct": 2,
+    "explanation": "Recall = TP / (TP + FN); indica cuántas de las instancias positivas reales fueron identificadas."
+  },
+  {
+    "question": "¿En qué situación es preferible optimizar recall frente a precision?",
+    "options": [
+      "En detección de spam, donde es peor dejar correos no deseados",
+      "En diagnóstico médico, donde es peor pasar por alto una enfermedad",
+      "En recomendadores de producto, para no abrumar al usuario",
+      "En clasificación de imágenes de objetos cotidianos"
+    ],
+    "correct": 1,
+    "explanation": "En medicina es crítico detectar todos los casos (alto recall), incluso si hay falsos positivos."
+  },
+  {
+    "question": "¿Qué representa la curva ROC?",
+    "options": [
+      "TPR vs FNR",
+      "Precision vs Recall",
+      "TPR vs FPR",
+      "Accuracy vs Threshold"
+    ],
+    "correct": 2,
+    "explanation": "ROC grafica la Tasa de Verdaderos Positivos (TPR) frente a la Tasa de Falsos Positivos (FPR) a distintos umbrales."
+  },
+  {
+    "question": "¿Para qué sirve el área bajo la curva ROC (AUC)?",
+    "options": [
+      "Medir la precisión promedio",
+      "Indicar sensibilidad máxima",
+      "Evaluar capacidad de separación de clases",
+      "Determinar el umbral óptimo"
+    ],
+    "correct": 2,
+    "explanation": "AUC cuantifica qué tan bien el modelo distingue entre clases positiva y negativa."
+  },
+  {
+    "question": "¿Qué es el F1-score?",
+    "options": [
+      "La media aritmética de precision y recall",
+      "El mínimo entre precision y recall",
+      "La media geométrica de precision y recall",
+      "La media armónica de precision y recall"
+    ],
+    "correct": 3,
+    "explanation": "F1 = 2·(precision·recall)/(precision+recall), balancea ambos indicadores."
+  },
+  {
+    "question": "¿Qué indica un modelo con muy bajo error de entrenamiento pero alto error de validación?",
+    "options": [
+      "Tiene bias alto",
+      "Está subajustado (underfitting)",
+      "Está sobreajustado (overfitting)",
+      "Tiene varianza baja"
+    ],
+    "correct": 2,
+    "explanation": "Overfitting: el modelo memoriza el entrenamiento pero no generaliza a datos nuevos."
+  },
+  {
+    "question": "¿Qué describe el underfitting?",
+    "options": [
+      "Modelo demasiado complejo",
+      "Modelo demasiado simple",
+      "Ausencia de datos de prueba",
+      "Exceso de regularización"
+    ],
+    "correct": 1,
+    "explanation": "Underfitting ocurre cuando el modelo no captura patrones subyacentes por ser demasiado simple."
+  },
+  {
+    "question": "¿Cuál es el objetivo de la validación cruzada (cross-validation)?",
+    "options": [
+      "Reducir el tamaño del dataset",
+      "Evaluar estabilidad y generalización del modelo",
+      "Acelerar el entrenamiento",
+      "Optimizar hiperparámetros automáticamente"
+    ],
+    "correct": 1,
+    "explanation": "Cross-validation estima rendimiento medio del modelo usando múltiples particiones de datos."
+  },
+  {
+    "question": "¿Qué caracteriza a la regresión frente a la clasificación?",
+    "options": [
+      "Predice variables categóricas",
+      "Predice variables continuas",
+      "No requiere datos de entrada",
+      "Solo usa árboles de decisión"
+    ],
+    "correct": 1,
+    "explanation": "La regresión modela un valor numérico continuo en lugar de asignar una clase."
+  },
+  {
+    "question": "¿Para qué se usa un árbol de decisión?",
+    "options": [
+      "Clasificación y regresión con interpretabilidad",
+      "Solo para clustering",
+      "Solo para reducción de dimensionalidad",
+      "Para generar vectores de características"
+    ],
+    "correct": 0,
+    "explanation": "Los decision trees son modelos no lineales, fáciles de interpretar y aptos para clasificación/regresión."
+  },
+  {
+    "question": "¿Qué ventaja ofrece un bosque aleatorio (Random Forest)?",
+    "options": [
+      "Entrenamiento secuencial",
+      "Reducir varianza combinando muchos árboles",
+      "Necesita pocos datos",
+      "Siempre produce interpretaciones simples"
+    ],
+    "correct": 1,
+    "explanation": "Random Forest promedia múltiples árboles construidos con muestras distintas para estabilizar la predicción."
+  },
+  {
+    "question": "¿Qué es boosting?",
+    "options": [
+      "Agrupar predicciones de modelos paralelos",
+      "Mejorar un ensemble corrigiendo errores de iteraciones previas",
+      "Reducir la dimensionalidad",
+      "Seleccionar características relevantes"
+    ],
+    "correct": 1,
+    "explanation": "Boosting ajusta nuevos modelos a los errores residuales de modelos anteriores para mejorar iterativamente."
+  },
+  {
+    "question": "¿Qué modelo es adecuado para detectar grupos sin etiquetas (etiquetado)?",
+    "options": [
+      "Regresión logística",
+      "K-Means clustering",
+      "Árbol de decisión",
+      "SVM"
+    ],
+    "correct": 1,
+    "explanation": "K-Means es un algoritmo de clustering no supervisado que agrupa datos en k clusters."
+  },
+  {
+    "question": "¿Cuál es el propósito del análisis de componentes principales (PCA)?",
+    "options": [
+      "Clasificar instancias positivas",
+      "Reducir dimensionalidad manteniendo varianza",
+      "Predecir variables continuas",
+      "Identificar outliers"
+    ],
+    "correct": 1,
+    "explanation": "PCA transforma variables originales en componentes que explican la mayor parte de la varianza."
+  },
+  {
+    "question": "¿Para qué sirve la regularización en modelos lineales?",
+    "options": [
+      "Aumentar complejidad",
+      "Prevenir overfitting penalizando coeficientes grandes",
+      "Eliminar ruido de datos",
+      "Optimizar el tamaño del dataset"
+    ],
+    "correct": 1,
+    "explanation": "La regularización (L1/L2) penaliza coeficientes grandes para mejorar la generalización."
+  },
+  {
+    "question": "¿En qué consiste el sesgo (bias) de un modelo?",
+    "options": [
+      "Error sistemático por asunciones simplificadas",
+      "Variabilidad de predicciones con datos nuevos",
+      "Número de parámetros",
+      "Capacidad de memorizar datos"
+    ],
+    "correct": 0,
+    "explanation": "Bias mide el error introducido por aproximar la realidad con un modelo demasiado simple."
+  },
+  {
+    "question": "¿Qué mide la varianza de un modelo?",
+    "options": [
+      "Error promedio de entrenamiento",
+      "Sensibilidad de predicciones a cambios en los datos de entrenamiento",
+      "Capacidad de generalización",
+      "Número de características"
+    ],
+    "correct": 1,
+    "explanation": "Varianza evalúa cuánto cambian las predicciones si entrenamos en un conjunto distinto."
+  },
+  {
+    "question": "¿Cómo ayuda la selección de características (feature selection)?",
+    "options": [
+      "Mejora interpretabilidad y reduce overfitting",
+      "Aumenta dimensionalidad",
+      "Elimina la necesidad de preprocesamiento",
+      "Garantiza mejor precisión siempre"
+    ],
+    "correct": 0,
+    "explanation": "Eliminar variables irrelevantes mejora la eficiencia, claridad y reduce ruido en el modelo."
+  },
+  {
+    "question": "¿Qué rol juegan los datos de validación (hold-out)?",
+    "options": [
+      "Calibrar hiperparámetros y evaluar generalización",
+      "Entrenar el modelo final",
+      "Generar características nuevas",
+      "Aumentar el tamaño del conjunto de entrenamiento"
+    ],
+    "correct": 0,
+    "explanation": "Se usan para ajustar parámetros y estimar rendimiento real sin haber visto esos datos en entrenamiento."
+  },
+  {
+    "question": "¿Cuál es la diferencia clave entre clasificación binaria y multiclase?",
+    "options": [
+      "Binaria predice dos clases; multiclase más de dos",
+      "Binaria usa regresión; multiclase usa clustering",
+      "No hay diferencia",
+      "Binaria requiere más datos"
+    ],
+    "correct": 0,
+    "explanation": "La clasificación binaria asigna una de dos etiquetas; multiclase, una entre varias posibles."
+  },
+  {
+    "question": "¿Para qué se utiliza un modelo de regresión lineal?",
+    "options": [
+      "Predecir una etiqueta categórica",
+      "Predecir un valor continuo",
+      "Agrupar datos sin etiquetas",
+      "Reducir dimensionalidad"
+    ],
+    "correct": 1,
+    "explanation": "La regresión lineal estima la relación lineal entre variables independientes y una variable numérica."
+  },
+  {
+    "question": "¿Por qué es importante repartir datos en entrenamiento y prueba?",
+    "options": [
+      "Para medir la capacidad de generalización",
+      "Para aumentar la complejidad del modelo",
+      "Para seleccionar características",
+      "No es importante"
+    ],
+    "correct": 0,
+    "explanation": "Un split preventivo asegura que evaluamos el modelo en datos que no ha visto antes."
+  },
+  {
+    "question": "¿Qué evalúa la matriz de confusión?",
+    "options": [
+      "Distribución de clases en el dataset",
+      "Conteo de TP, TN, FP y FN",
+      "Precisión de regresión",
+      "Varianza del modelo"
+    ],
+    "correct": 1,
+    "explanation": "La confusion matrix muestra cómo se distribuyen las predicciones en verdaderos y falsos positivos y negativos."
+  },
+  {
+    "question": "¿Qué es el aprendizaje supervisado?",
+    "options": [
+      "Modelar datos sin etiquetas",
+      "Modelar datos usando ejemplos con etiquetas",
+      "Reducir dimensionalidad",
+      "Agrupar datos"
+    ],
+    "correct": 1,
+    "explanation": "Supervised learning utiliza pares de entrada-salida para entrenar un modelo a predecir la etiqueta."
+  },
+  {
+    "question": "¿Qué es el aprendizaje no supervisado?",
+    "options": [
+      "Entrenar con etiquetas conocidas",
+      "Descubrir patrones sin etiquetas",
+      "Regularizar un modelo",
+      "Validar el modelo"
+    ],
+    "correct": 1,
+    "explanation": "Unsupervised learning explora estructura interna de datos sin recurrir a etiquetas predefinidas."
+  },
+  {
+    "question": "¿Para qué sirve la validación estratificada?",
+    "options": [
+      "Mantener proporción de clases en cada partición",
+      "Randomizar completamente los datos",
+      "Aumentar ruido en el dataset",
+      "Reducir dimensionalidad"
+    ],
+    "correct": 0,
+    "explanation": "Stratified split conserva la proporción de cada clase en los conjuntos de entrenamiento y prueba."
+  },
+  {
+    "question": "¿Qué ventaja tiene un modelo lineal simple sobre uno complejo?",
+    "options": [
+      "Mayor interpretabilidad y menor riesgo de overfitting",
+      "Siempre mejor precisión",
+      "Entrena más lentamente",
+      "No necesita datos"
+    ],
+    "correct": 0,
+    "explanation": "Los modelos simples son fáciles de entender y menos propensos a memorizar el ruido."
+  },
+  {
+    "question": "¿Cuál es el propósito principal de un modelo de ensamble?",
+    "options": [
+      "Reducir sesgo usando un solo estimador",
+      "Combinar múltiples modelos para mejorar robustez y precisión",
+      "Aumentar varianza",
+      "Eliminar necesidad de datos"
+    ],
+    "correct": 1,
+    "explanation": "Los ensembles agregan predicciones de varios modelos para capturar diferentes aspectos y reducir errores."
+  }
+]

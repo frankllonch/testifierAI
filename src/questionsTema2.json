@@ -1,0 +1,321 @@
+[
+  {
+    "question": "¿Qué mide el Error Cuadrático Medio (MSE) en un modelo de regresión?",
+    "options": [
+      "La media de los errores absolutos",
+      "La raíz cuadrada del error medio",
+      "La media de los cuadrados de los residuos",
+      "El porcentaje de varianza explicada"
+    ],
+    "correct": 2,
+    "explanation": "MSE = (1/N)·∑(yi−ŷi)²; promedia los cuadrados de las diferencias entre valores reales y predichos."
+  },
+  {
+    "question": "¿En qué difiere el Error Absoluto Medio (MAE) respecto al MSE?",
+    "options": [
+      "MAE penaliza más los errores grandes",
+      "MAE usa diferencias absolutas en lugar de cuadrados",
+      "MAE es siempre mayor que el MSE",
+      "MAE requiere normalización previa"
+    ],
+    "correct": 1,
+    "explanation": "MAE = (1/N)·∑|yi−ŷi|; promedia las magnitudes de los errores sin elevarlos al cuadrado."
+  },
+  {
+    "question": "¿Qué indica el coeficiente de determinación R²?",
+    "options": [
+      "Proporción de varianza de la predicción sobre la real",
+      "Proporción de varianza explicada por el modelo",
+      "Error medio normalizado",
+      "Número de variables en el modelo"
+    ],
+    "correct": 1,
+    "explanation": "R² = 1−(SSres/SStot); muestra qué fracción de la varianza de los datos explica el modelo."
+  },
+  {
+    "question": "¿Para qué sirve la estadística F en regresión?",
+    "options": [
+      "Testear normalidad de residuos",
+      "Comparar varianza de errores",
+      "Evaluar significancia global del modelo",
+      "Medir multicolinealidad"
+    ],
+    "correct": 2,
+    "explanation": "F compara varianza explicada por el modelo frente a la no explicada; un F alto indica modelo significativo."
+  },
+  {
+    "question": "¿Qué informa el valor p asociado a un coeficiente β?",
+    "options": [
+      "Magnitud del coeficiente",
+      "Probabilidad de observar el coeficiente bajo H₀",
+      "Varianza del coeficiente",
+      "Correlación con otras variables"
+    ],
+    "correct": 1,
+    "explanation": "El p–value mide qué tan probable es obtener ese β si en realidad efectividad fuese cero (hipótesis nula)."
+  },
+  {
+    "question": "¿Qué mide la estadística Durbin–Watson?",
+    "options": [
+      "Autocorrelación de residuos",
+      "Distribución de residuos",
+      "Asimetría de residuos",
+      "Número de observaciones atípicas"
+    ],
+    "correct": 0,
+    "explanation": "Durbin–Watson detecta correlación serial en residuos; un valor cercano a 2 indica independencia."
+  },
+  {
+    "question": "¿Cuál es el propósito de la prueba Jarque–Bera?",
+    "options": [
+      "Evaluar heterocedasticidad",
+      "Testear normalidad de los residuos",
+      "Medir multicolinealidad",
+      "Examinar autocorrelación"
+    ],
+    "correct": 1,
+    "explanation": "Jarque–Bera combina asimetría y curtosis de residuos para verificar si siguen una distribución normal."
+  },
+  {
+    "question": "¿Qué describe el criterio de información de Akaike (AIC)?",
+    "options": [
+      "Error de predicción en validación",
+      "Comparación de modelos penalizando complejidad",
+      "Proporción de varianza explicada",
+      "Número óptimo de características"
+    ],
+    "correct": 1,
+    "explanation": "AIC = 2k−2·ln(L); equilibra bondad de ajuste (verosimilitud L) y número de parámetros k."
+  },
+  {
+    "question": "¿Qué mide la curtosis (kurtosis) de los residuos?",
+    "options": [
+      "Asimetría de la distribución",
+      "Anchura de la campana normal",
+      "Peso de las colas de la distribución",
+      "Número de picos en la distribución"
+    ],
+    "correct": 2,
+    "explanation": "La curtosis evalúa si hay más valores extremos (colas pesadas) o menos (colas ligeras) que en una normal."
+  },
+  {
+    "question": "¿Qué identifica la estadística Omnibus en regresión?",
+    "options": [
+      "Linealidad del modelo",
+      "Significancia individual de β",
+      "Normalidad conjunta de residuos",
+      "Heterocedasticidad"
+    ],
+    "correct": 2,
+    "explanation": "El test Omnibus combina asimetría y curtosis para evaluar normalidad global de los residuos."
+  },
+  {
+    "question": "¿Cuál es la diferencia entre Label Encoding y One-Hot Encoding?",
+    "options": [
+      "Label ruido; One-Hot normaliza valores",
+      "Label asigna enteros; One-Hot crea columnas binarias",
+      "Ambos crean columnas binarias",
+      "Label disminuye dimensionalidad"
+    ],
+    "correct": 1,
+    "explanation": "LabelEncoder mapea categorías a enteros, One-Hot genera una columna por categoría evitando orden implícito."
+  },
+  {
+    "question": "¿Cuál es el objetivo de la regresión lineal múltiple?",
+    "options": [
+      "Clasificar instancias en categorías",
+      "Predecir una variable continua en función de varias independientes",
+      "Agrupar datos sin etiquetas",
+      "Reducir la dimensionalidad"
+    ],
+    "correct": 1,
+    "explanation": "La regresión múltiple modela y estima un valor numérico basado en varias variables predictoras."
+  },
+  {
+    "question": "¿Qué asunción exige homocedasticidad en regresión?",
+    "options": [
+      "Residuos con varianza constante",
+      "Residuos independientes",
+      "Residuos norm    ales",
+      "Variables sin multicolinealidad"
+    ],
+    "correct": 0,
+    "explanation": "Homocedasticidad implica que la varianza de residuos es la misma para todos los niveles de predictores."
+  },
+  {
+    "question": "¿Por qué es importante la independencia de errores?",
+    "options": [
+      "Evita overfitting",
+      "Permite inferencias estadísticas válidas",
+      "Reduce dimensión de datos",
+      "Mejora rapidez de cálculo"
+    ],
+    "correct": 1,
+    "explanation": "La autocorrelación en residuos viola supuestos, afectando validez de pruebas t y F."
+  },
+  {
+    "question": "¿Qué problema indica un Cond. No. muy alto?",
+    "options": [
+      "Outliers en Y",
+      "Colinealidad entre predictores",
+      "Error de especificación",
+      "Insuficiente muestra"
+    ],
+    "correct": 1,
+    "explanation": "El número de condición evalúa sensibilidad de XᵀX; un valor alto señala multicolinealidad."
+  },
+  {
+    "question": "¿Qué transformaciones permiten linealizar modelos exponenciales?",
+    "options": [
+      "Logaritmo en Y y/o X",
+      "Raíz cuadrada en Y",
+      "Elevar a potencia",
+      "Estandarización de variables"
+    ],
+    "correct": 0,
+    "explanation": "ln(Y)=ln(a)+bX convierte relaciones exponenciales en forma lineal para aplicar regresión lineal."
+  },
+  {
+    "question": "¿Cuál es la ventaja de la regresión Ridge?",
+    "options": [
+      "Elimina variables irrelevantes",
+      "Penaliza coeficientes grandes para reducir varianza",
+      "No requiere variables normalizadas",
+      "Maximiza varianza explicada sin penalización"
+    ],
+    "correct": 1,
+    "explanation": "Ridge (L2) añade α·∑βj² al costo, evitando coeficientes extremos y mejorando generalización."
+  },
+  {
+    "question": "¿Qué característica distingue a Lasso frente a Ridge?",
+    "options": [
+      "Lasso usa L1 penalización, creando sparsity",
+      "Lasso solo reduce coeficientes sin eliminarlos",
+      "Lasso no requiere α",
+      "Lasso es para clasificación"
+    ],
+    "correct": 0,
+    "explanation": "Lasso (L1) puede forzar algunos coeficientes a cero, realizando selección implícita de variables."
+  },
+  {
+    "question": "¿En qué caso usarías Elastic Net?",
+    "options": [
+      "Cuando hay pocas variables",
+      "Cuando se desea combinar L1 y L2 para equilibrio entre sparsity y estabilidad",
+      "Para datos normalmente distribuidos",
+      "Solo para modelos no lineales"
+    ],
+    "correct": 1,
+    "explanation": "Elastic Net mezcla penalizaciones L1 y L2; útil si hay multicolinealidad y se desea selección de variables."
+  },
+  {
+    "question": "¿Qué distingue la regresión logística binaria de la multiclase?",
+    "options": [
+      "Binaria predice dos clases; multiclase más de dos",
+      "Binaria usa MSE; multiclase usa MAE",
+      "No hay diferencia matemática",
+      "Multiclase no tiene sigmoide"
+    ],
+    "correct": 0,
+    "explanation": "La logística binaria modela P(y=1), la multinomial extiende a K categorías mutuamente excluyentes."
+  },
+  {
+    "question": "¿Cuál es el propósito de la función sigmoide en regresión logística?",
+    "options": [
+      "Generar un valor continuo no acotado",
+      "Transformar la combinación lineal en una probabilidad entre 0 y 1",
+      "Linealizar relaciones no lineales",
+      "Reducir dimensionalidad"
+    ],
+    "correct": 1,
+    "explanation": "σ(z)=1/(1+e⁻ᶻ) convierte la salida lineal en un valor acotado [0,1] interpretable como probabilidad."
+  },
+  {
+    "question": "¿Qué métrica es común para evaluar regresores basados en árboles?",
+    "options": [
+      "AUC-ROC",
+      "MSE o MAE sobre datos de prueba",
+      "Recall",
+      "Silhouette score"
+    ],
+    "correct": 1,
+    "explanation": "Para regresión se usan MSE, MAE o R² en conjunto de validación."
+  },
+  {
+    "question": "¿Qué ventaja principal tiene Random Forest en regresión?",
+    "options": [
+      "Entrenamiento extremadamente rápido",
+      "Mejora estabilidad y reduce varianza promediando muchos árboles",
+      "Elimina colinealidad automáticamente",
+      "Garantiza interpretabilidad total"
+    ],
+    "correct": 1,
+    "explanation": "Forest promedia predicciones de múltiples árboles entrenados en subconjuntos aleatorios, reduciendo overfitting."
+  },
+  {
+    "question": "¿Para qué sirve el parámetro learning_rate en Gradient Boosting?",
+    "options": [
+      "Determinar profundidad máxima del árbol",
+      "Controlar cuánto corrige cada nuevo árbol el error residual",
+      "Número de muestras mínimo por hoja",
+      "Número de árboles a entrenar"
+    ],
+    "correct": 1,
+    "explanation": "learning_rate escala la contribución de cada árbol en el ensemble para evitar ajustes demasiado agresivos."
+  },
+  {
+    "question": "¿Qué describe la curva de aprendizaje (learning curve)?",
+    "options": [
+      "Evolución del error de entrenamiento y validación según tamaño de datos",
+      "Cambio de hiperparámetros",
+      "Variación del AIC con α",
+      "Distribución de residuos"
+    ],
+    "correct": 0,
+    "explanation": "Las learning curves muestran cómo se reduce error en entrenamiento y validación al aumentar datos o complejidad."
+  },
+  {
+    "question": "¿Por qué se realiza la validación cruzada k-fold?",
+    "options": [
+      "Para usar todo el dataset solo como entrenamiento",
+      "Para estimar rendimiento estable usando k particiones",
+      "Para aumentar el tamaño del conjunto de prueba",
+      "Para normalizar variables"
+    ],
+    "correct": 1,
+    "explanation": "Cross-validation divide datos en k bloques, entrenando k veces con distintos folds para evaluar robustez del modelo."
+  },
+  {
+    "question": "¿Qué indica un alto sesgo (bias) en el bias-variance tradeoff?",
+    "options": [
+      "Modelo muy complejo",
+      "Modelo demasiado simple (underfitting)",
+      "Modelo con muchos datos",
+      "Modelo con alta varianza"
+    ],
+    "correct": 1,
+    "explanation": "Un bias alto implica que el modelo no capta patrones complejos y rinde pobre tanto en entrenamiento como en prueba."
+  },
+  {
+    "question": "¿Qué indica una alta varianza en el bias-variance tradeoff?",
+    "options": [
+      "Underfitting",
+      "Overfitting",
+      "Normalidad de residuos",
+      "Heterocedasticidad"
+    ],
+    "correct": 1,
+    "explanation": "Alta varianza significa que el modelo se ajusta demasiado al ruido de entrenamiento y no generaliza bien."
+  },
+  {
+    "question": "¿Cuál es el objetivo final al ajustar hiperparámetros?",
+    "options": [
+      "Maximizar el ajuste al conjunto de entrenamiento",
+      "Minimizar errores de entrenamiento",
+      "Encontrar equilibrio que maximice rendimiento en datos no vistos",
+      "Eliminar variables del modelo"
+    ],
+    "correct": 2,
+    "explanation": "La optimización de hiperparámetros busca mejorar la generalización, no solo el desempeño en entrenamiento."
+  }
+]

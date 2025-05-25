@@ -1,0 +1,321 @@
+[
+  {
+    "question": "¿Qué es una serie temporal?",
+    "options": [
+      "Una secuencia de datos no ordenados",
+      "Una secuencia de datos ordenados cronológicamente",
+      "Un conjunto de puntos aleatorios",
+      "Un modelo estadístico"
+    ],
+    "correct": 1,
+    "explanation": "Una serie temporal es una secuencia de observaciones registradas en puntos sucesivos en el tiempo, ordenadas cronológicamente."
+  },
+  {
+    "question": "¿Cuándo es apropiado usar un modelo aditivo para descomposición?",
+    "options": [
+      "Cuando la estacionalidad crece con el nivel de la serie",
+      "Cuando los componentes son independientes del nivel de la serie",
+      "Cuando solo hay tendencia y ruido",
+      "Cuando los datos son categóricos"
+    ],
+    "correct": 1,
+    "explanation": "El modelo aditivo (Y=T+S+R) se usa cuando la amplitud de estacionalidad y ruido es constante independientemente del nivel de la serie."
+  },
+  {
+    "question": "¿Qué componente captura la dirección de largo plazo de la serie?",
+    "options": [
+      "Ruido",
+      "Tendencia",
+      "Estacionalidad",
+      "Ciclo"
+    ],
+    "correct": 1,
+    "explanation": "La tendencia refleja el movimiento general ascendente o descendente de la serie a lo largo del tiempo."
+  },
+  {
+    "question": "¿Qué componente refleja patrones periódicos en la serie?",
+    "options": [
+      "Tendencia",
+      "Ruido",
+      "Estacionalidad",
+      "Ciclo"
+    ],
+    "correct": 2,
+    "explanation": "La estacionalidad son fluctuaciones regulares que se repiten en intervalos fijos, como estaciones o meses."
+  },
+  {
+    "question": "¿Cómo se denominan las fluctuaciones aleatorias no explicadas por tendencia o estacionalidad?",
+    "options": [
+      "Ciclos",
+      "Ruido (residuos)",
+      "Tendencia",
+      "Patrones"
+    ],
+    "correct": 1,
+    "explanation": "El ruido o residuo es la variación aleatoria que queda después de modelar tendencia y estacionalidad."
+  },
+  {
+    "question": "¿Cuál es el propósito de descomponer una serie temporal?",
+    "options": [
+      "Mejorar la resolución de datos",
+      "Separar componentes para analizarlos por separado",
+      "Eliminar valores faltantes",
+      "Convertir datos a categoría"
+    ],
+    "correct": 1,
+    "explanation": "La descomposición facilita analizar tendencia, estacionalidad y ruido por separado, mejorando el entendimiento."
+  },
+  {
+    "question": "¿Qué requisito debe cumplir una serie para ser estacionaria?",
+    "options": [
+      "Tener tendencia creciente",
+      "Media y varianza constantes a lo largo del tiempo",
+      "Ser no negativa",
+      "Tener ciclos largos"
+    ],
+    "correct": 1,
+    "explanation": "Una serie estacionaria tiene media, varianza y autocorrelación constantes en el tiempo."
+  },
+  {
+    "question": "¿Qué operación suele usarse para hacer estacionaria una serie?",
+    "options": [
+      "Promediado móvil",
+      "Diferenciación",
+      "Normalización min-max",
+      "Agrupamiento"
+    ],
+    "correct": 1,
+    "explanation": "La diferenciación (restar valor anterior) elimina tendencia y ayuda a estacionarizar la serie."
+  },
+  {
+    "question": "¿Qué mide la función de autocorrelación (ACF)?",
+    "options": [
+      "Correlación de la serie consigo misma en distintos lags",
+      "Correlación parcial entre variables diferentes",
+      "Varianza de la serie",
+      "Media de la serie"
+    ],
+    "correct": 0,
+    "explanation": "La ACF muestra la correlación entre valores de la serie separados por distintos retardos (lags)."
+  },
+  {
+    "question": "¿Qué mide la función de autocorrelación parcial (PACF)?",
+    "options": [
+      "Correlación en lag 1 solamente",
+      "Correlación neta entre valores sin influencia de intermediarios",
+      "Media acumulada",
+      "Varianza residual"
+    ],
+    "correct": 1,
+    "explanation": "La PACF muestra la correlación directa entre yt y yt–k eliminando efectos de retardos intermedios."
+  },
+  {
+    "question": "¿Para qué sirve la ACF al identificar un modelo ARIMA?",
+    "options": [
+      "Determinar orden de diferenciación d",
+      "Elegir método de validación",
+      "Fijar hiperparámetros de batch size",
+      "Diagnosticar estacionalidad"
+    ],
+    "correct": 3,
+    "explanation": "La ACF ayuda a detectar estacionalidad y a determinar el orden q del componente MA del modelo ARIMA."
+  },
+  {
+    "question": "¿Qué componente describe la parte autorregresiva (AR) en ARIMA?",
+    "options": [
+      "Influencia de errores pasados",
+      "Influencia de valores pasados de la serie",
+      "Diferenciación integrada",
+      "Estacionalidad"
+    ],
+    "correct": 1,
+    "explanation": "El componente AR modela yt como combinación lineal de valores anteriores yt–1, yt–2, …"
+  },
+  {
+    "question": "¿Qué componente describe la parte de medias móviles (MA) en ARIMA?",
+    "options": [
+      "Influencia de valores anteriores",
+      "Influencia de errores pasados",
+      "Diferenciación integrada",
+      "Estacionalidad"
+    ],
+    "correct": 1,
+    "explanation": "El componente MA modela yt como combinación de errores pasados εt–1, εt–2, …"
+  },
+  {
+    "question": "¿Qué representa el parámetro d en ARIMA(p,d,q)?",
+    "options": [
+      "Orden de medias móviles",
+      "Orden de diferenciación para estacionarizar",
+      "Cantidad de lags autorregresivos",
+      "Periodos estacionales"
+    ],
+    "correct": 1,
+    "explanation": "d es el número de veces que se diferencia la serie para hacerla estacionaria."
+  },
+  {
+    "question": "¿Cómo se expresa la notación de un modelo SARIMA?",
+    "options": [
+      "ARIMA(p,d,q)-SAR(P,D,Q,s)",
+      "SARIMA(p,d,q)×(P,D,Q,s)",
+      "ARMA(p,q)-SARIMA(P,D,Q)",
+      "ARIMA(p,d,q)SPS"
+    ],
+    "correct": 1,
+    "explanation": "SARIMA se escribe ARIMA(p,d,q)×(P,D,Q,s) incorporando términos estacionales."
+  },
+  {
+    "question": "En SARIMA, ¿qué significa P?",
+    "options": [
+      "Orden de diferenciación integrada",
+      "Orden autorregresivo estacional",
+      "Orden de medias móviles",
+      "Orden de estacionalidad"
+    ],
+    "correct": 1,
+    "explanation": "P es el número de retardos en la parte autorregresiva estacional del modelo."
+  },
+  {
+    "question": "En SARIMA, ¿qué significa D?",
+    "options": [
+      "Orden de medias móviles estacionales",
+      "Diferenciación integrada normal",
+      "Orden de diferenciación estacional",
+      "Frecuencia de muestreo"
+    ],
+    "correct": 2,
+    "explanation": "D es el número de veces que se diferencia la serie en su componente estacional para estacionarizar."
+  },
+  {
+    "question": "En SARIMA, ¿qué representa Q?",
+    "options": [
+      "Orden de medias móviles estacionales",
+      "Orden autorregresivo normal",
+      "Orden de diferenciación integrada",
+      "Frecuencia de estacionalidad"
+    ],
+    "correct": 0,
+    "explanation": "Q es el número de términos de media móvil estacional en el modelo SARIMA."
+  },
+  {
+    "question": "En SARIMA, ¿qué indica s?",
+    "options": [
+      "Número de lags AR",
+      "Periodos de estacionalidad",
+      "Orden de MA",
+      "Diferenciación integrada"
+    ],
+    "correct": 1,
+    "explanation": "s es la longitud del ciclo estacional, por ejemplo 12 para datos mensuales con patrón anual."
+  },
+  {
+    "question": "¿En qué se diferencia un ciclo de la estacionalidad?",
+    "options": [
+      "Ciclos son periódicos exactos, estacionalidad no",
+      "Estacionalidad es arbitraria, ciclos regulares",
+      "Ciclos son fluctuaciones no periódicas de mayor escala",
+      "No hay diferencia"
+    ],
+    "correct": 2,
+    "explanation": "Un ciclo es una oscilación recurrente pero no con periodo fijo, a diferencia de la estacionalidad."
+  },
+  {
+    "question": "¿Para qué sirve un test de raíz unitaria (Dickey–Fuller)?",
+    "options": [
+      "Detectar autocorrelación",
+      "Probar normalidad de residuos",
+      "Verificar estacionariedad de la serie",
+      "Medir varianza"
+    ],
+    "correct": 2,
+    "explanation": "El test Dickey–Fuller evalúa si existe una raíz unitaria indicando no estacionariedad."
+  },
+  {
+    "question": "¿Qué métrica se usa comúnmente para evaluar pronósticos de series temporales?",
+    "options": [
+      "MAPE",
+      "ROC–AUC",
+      "Silhouette score",
+      "Accuracy"
+    ],
+    "correct": 0,
+    "explanation": "El MAPE mide el error porcentual absoluto promedio, útil para comparar pronósticos."
+  },
+  {
+    "question": "¿Cuál es la ventaja del RMSE sobre el MSE?",
+    "options": [
+      "Es menos sensible a errores grandes",
+      "Está en las mismas unidades de la variable original",
+      "No requiere raíz cuadrada",
+      "Siempre es mayor que el MSE"
+    ],
+    "correct": 1,
+    "explanation": "El RMSE es la raíz del MSE, por lo que sus unidades coinciden con las de los datos originales."
+  },
+  {
+    "question": "¿Por qué es útil la validación cruzada en series temporales?",
+    "options": [
+      "Para mezclar datos aleatoriamente",
+      "Para evaluar estabilidad de pronóstico a través de ventanas de tiempo",
+      "Para reducir dimensionalidad",
+      "Para normalizar datos"
+    ],
+    "correct": 1,
+    "explanation": "La validación cruzada en series temporales usa particiones correlacionadas en tiempo para medir robustez del modelo."
+  },
+  {
+    "question": "¿Qué riesgo se evita al diferenciar excesivamente una serie?",
+    "options": [
+      "Overfitting",
+      "Underfitting",
+      "Perder información de tendencia original",
+      "Aumentar el tamaño de muestra"
+    ],
+    "correct": 2,
+    "explanation": "Diferenciar demasiado puede eliminar patrones de tendencia esenciales y hacer el modelo inapropiado."
+  },
+  {
+    "question": "¿Qué indica un pico pronunciado en la ACF en lag s?",
+    "options": [
+      "Presencia de estacionalidad de periodo s",
+      "Error en el modelo",
+      "Series estacionaria",
+      "Ciclo inexistente"
+    ],
+    "correct": 0,
+    "explanation": "Un pico en lag s sugiere que hay un patrón estacional con periodo igual a s."
+  },
+  {
+    "question": "¿Qué técnica permite automatizar la selección de p, d y q?",
+    "options": [
+      "auto_arima",
+      "Grid Search clásico",
+      "Promedio móvil",
+      "Regresión lineal"
+    ],
+    "correct": 0,
+    "explanation": "auto_arima prueba combinaciones de (p,d,q) y selecciona el modelo óptimo según criterio de información."
+  },
+  {
+    "question": "¿Por qué penaliza AIC la complejidad del modelo?",
+    "options": [
+      "Para preferir modelos más simples si ajuste similar",
+      "Para aumentar varianza",
+      "Para favorecer p y q grandes",
+      "Para ignorar estacionalidad"
+    ],
+    "correct": 0,
+    "explanation": "El AIC incluye un término que penaliza el número de parámetros, equilibrando ajuste y simplicidad."
+  },
+  {
+    "question": "¿Cuál es el beneficio de modelar SARIMA en datos con estacionalidad clara?",
+    "options": [
+      "Mejorar ajuste de tendencia solamente",
+      "Capturar patrones estacionales explícitamente",
+      "Reducir sesgo en regresión",
+      "Eliminar ruido completamente"
+    ],
+    "correct": 1,
+    "explanation": "SARIMA añade componentes estacionales AR y MA para modelar directamente patrones periódicos en la serie."
+  }
+]

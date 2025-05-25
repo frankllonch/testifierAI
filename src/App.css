@@ -1,0 +1,41 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 10fr));
+  gap: 2rem;
+  justify-items: center;
+}
+.custom-big-btn {
+  font-size: 4rem;
+  width: 12rem;
+  height: 12rem;
+  line-height: 1;
+}
+.custom-big-btn1 {
+  font-size: 4rem;
+  width: 18rem;
+  height: 12rem;
+  line-height: 1;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

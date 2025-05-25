@@ -1,0 +1,332 @@
+[
+  {
+    "question": "Un classification report muestra precision=0.95 y recall=0.60 para la clase positiva en detección de fraude. ¿Es el modelo adecuado para minimizar fraudes?",
+    "options": [
+      "Sí, porque tiene alta precisión",
+      "No, porque la recall es demasiado baja",
+      "Sí, porque F1 > 0.75",
+      "No, porque la precisión debe ser >0.99"
+    ],
+    "correct": 1,
+    "explanation": "Para detección de fraude es crítico capturar la mayor parte de fraudes (alta recall), y 0.60 es insuficiente."
+  },
+  {
+    "question": "Un modelo obtiene AUC=0.82 en validación. ¿Cómo calificarías su capacidad de discriminación?",
+    "options": [
+      "Excelente (>0.90)",
+      "Buena (0.80–0.90)",
+      "Mala (<0.70)",
+      "Aleatoria (≈0.50)"
+    ],
+    "correct": 1,
+    "explanation": "AUC entre 0.80 y 0.90 indica buena habilidad para distinguir clases."
+  },
+  {
+    "question": "Al aplicar PCA se retienen dos componentes que explican 75% y 20% de varianza. ¿Es razonable reducir de 10 a 2 dimensiones?",
+    "options": [
+      "Sí, conserva 95% de la varianza",
+      "No, debería conservar al menos 99%",
+      "Sí, porque 2 componentes son suficientes",
+      "No, debería usar 10 componentes"
+    ],
+    "correct": 0,
+    "explanation": "Conservar 95% de varianza suele ser suficiente para muchos análisis reduciendo complejidad."
+  },
+  {
+    "question": "Un algoritmo K-Means con k=4 arroja silhouette score=0.15. ¿Qué indica este valor?",
+    "options": [
+      "Buena separación entre clusters",
+      "Clusters poco definidos",
+      "Overfitting de clusters",
+      "Número de clusters óptimo"
+    ],
+    "correct": 1,
+    "explanation": "Silhouette cercano a 0 indica que los puntos están entre clusters, no bien separados."
+  },
+  {
+    "question": "En DBSCAN, eps=0.5 y min_samples=5 deja 20% de puntos como ruido. ¿Cómo mejorarías la captura de clusters?",
+    "options": [
+      "Aumentar eps",
+      "Disminuir eps",
+      "Aumentar min_samples",
+      "Reducir el número de dimensiones"
+    ],
+    "correct": 0,
+    "explanation": "Aumentar eps permite incluir más vecinos, disminuyendo puntos marcados como ruido."
+  },
+  {
+    "question": "Un modelo de regresión lineal obtiene MAPE=12% en ventas. ¿Es un error aceptable para forecasting?",
+    "options": [
+      "Sí, <15% es bueno en series económicas",
+      "No, debería ser <5%",
+      "No, MAPE no aplica a regresión",
+      "Sí, porque R² >0.8"
+    ],
+    "correct": 0,
+    "explanation": "En forecasting económico un MAPE <15% se considera aceptable."
+  },
+  {
+    "question": "Comparas dos modelos: Random Forest AUC=0.88 y Logistic Regression AUC=0.87. ¿Cuál elegirías?",
+    "options": [
+      "Random Forest, ligera mejora",
+      "Logistic, más simple",
+      "Ambos, combinar predicciones",
+      "Ninguno, AUC <0.90"
+    ],
+    "correct": 2,
+    "explanation": "Stacking o ensemble de ambos puede aumentar robustez aprovechando fortalezas de cada uno."
+  },
+  {
+    "question": "Tras entrenamiento, la curva de training loss baja pero validation loss sube. ¿Qué fenómeno es?",
+    "options": [
+      "Underfitting",
+      "Overfitting",
+      "Convergencia correcta",
+      "Batch demasiado grande"
+    ],
+    "correct": 1,
+    "explanation": "Si validation loss aumenta mientras training loss sigue bajando, el modelo memoriza ruido."
+  },
+  {
+    "question": "Se aplica Early Stopping con patience=5 y detiene el entrenamiento. ¿Cuál es el beneficio principal?",
+    "options": [
+      "Reducir overfitting",
+      "Aumentar batch size",
+      "Mejorar recall",
+      "Eliminar regularización"
+    ],
+    "correct": 0,
+    "explanation": "Early Stopping interrumpe antes de que el modelo sobreajuste los datos de entrenamiento."
+  },
+  {
+    "question": "En un classification report multiclase, una clase rara tiene F1=0.20. ¿Qué acción tomarías?",
+    "options": [
+      "Aumentar muestras de esa clase",
+      "Reducir tasa de aprendizaje",
+      "Disminuir regularización",
+      "Eliminar la clase del análisis"
+    ],
+    "correct": 0,
+    "explanation": "Con pocas muestras la métrica sufre; recolectar más datos balancea la clase."
+  },
+  {
+    "question": "Un pipeline usa MinMaxScaler y luego KNN. En test, accuracy=0.60. ¿Qué probarías primero?",
+    "options": [
+      "Usar StandardScaler",
+      "Aumentar k",
+      "Reducir dimensionalidad con PCA",
+      "Cambiar KNN por SVM"
+    ],
+    "correct": 0,
+    "explanation": "MinMax puede sesgar distancias; Standard scaler (media 0,var 1) suele mejorar KNN."
+  },
+  {
+    "question": "Para evaluar regresión, comparas RMSE=5 y MAE=3 en datos de temperatura. ¿Cuál metricarías más?",
+    "options": [
+      "MAE, menos sensible a outliers",
+      "RMSE, penaliza más errores grandes",
+      "Ninguna, usar R²",
+      "Ninguna, usar AUC"
+    ],
+    "correct": 0,
+    "explanation": "MAE es más interpretable y menos influido por errores extremos en temperatura."
+  },
+  {
+    "question": "Se analizan clusters con Silhouette=0.55. ¿Cómo valoras la calidad?",
+    "options": [
+      "Buena (>0.5)",
+      "Regular (0.25–0.5)",
+      "Mala (<0.25)",
+      "Aleatoria (0)"
+    ],
+    "correct": 0,
+    "explanation": "Silhouette >0.5 indica clusters bien separados y cohesivos."
+  },
+  {
+    "question": "Generas un ROC curve y ves AUC=0.50. ¿Qué significa?",
+    "options": [
+      "Clasificador aleatorio",
+      "Excelente discriminación",
+      "Sobreajuste",
+      "Underfitting"
+    ],
+    "correct": 0,
+    "explanation": "AUC=0.5 indica que el modelo no distingue clases mejor que azar."
+  },
+  {
+    "question": "En validación cruzada k-fold (k=5) obtienes varianza alta entre folds. ¿Qué indica?",
+    "options": [
+      "Modelo inestable",
+      "Buen generalizador",
+      "Underfitting",
+      "Dataset balanceado"
+    ],
+    "correct": 0,
+    "explanation": "Gran diferencia entre folds sugiere alta sensibilidad al subconjunto de datos."
+  },
+  {
+    "question": "Aplicaste SMOTE para imbalanced data y mejoró recall, pero precision bajó de 0.90 a 0.70. ¿Por qué?",
+    "options": [
+      "SMOTE introduce muestras sintéticas similares aumentando falsos positivos",
+      "SMOTE reduce overfitting",
+      "SMOTE no afecta precision",
+      "Precision siempre mejora"
+    ],
+    "correct": 0,
+    "explanation": "SMOTE genera nuevas instancias de minoría, mejorando recall pero puede incrementar falsos positivos."
+  },
+  {
+    "question": "Comparas Random Forest (F1=0.82) vs XGBoost (F1=0.84). ¿Cómo elegir?",
+    "options": [
+      "XGBoost, mejor F1",
+      "RF, más interpretabilidad",
+      "Combinar ambos en ensemble",
+      "Elegir RF por default"
+    ],
+    "correct": 2,
+    "explanation": "Ensembling puede aprovechar fortalezas de ambos modelos y potencialmente superar a cada uno."
+  },
+  {
+    "question": "Tras aplicar LDA para reducción supervisada, accuracy sube de 0.75 a 0.80. ¿Qué aporta LDA?",
+    "options": [
+      "Maximizar separabilidad entre clases",
+      "Eliminar outliers",
+      "Reducir overfitting",
+      "Clustering automático"
+    ],
+    "correct": 0,
+    "explanation": "LDA busca ejes que mejor separen clases, mejorando desempeño de clasificador."
+  },
+  {
+    "question": "En CNN para clasificación de imágenes, training acc=0.99 y val acc=0.70. ¿Qué técnica usarías?",
+    "options": [
+      "Aumentar dropout",
+      "Reducir data augmentation",
+      "Quitar regularización L2",
+      "Aumentar lr"
+    ],
+    "correct": 0,
+    "explanation": "Aumentar dropout ayuda a combatir el overfitting en redes profundas."
+  },
+  {
+    "question": "Una red MLP alcanza loss=0.02 en train y 0.10 en val. ¿Cómo mejorarías val loss?",
+    "options": [
+      "Agregar Early Stopping y regularización",
+      "Incrementar número de capas",
+      "Quitar el dropout",
+      "Aumentar tamaño de batch"
+    ],
+    "correct": 0,
+    "explanation": "Regularizar y detener entrenamiento tempranamente evita ajuste excesivo."
+  },
+  {
+    "question": "Se usa GridSearchCV y encuentra mejor parámetro C=0.1 en SVM. ¿Qué ventaja aporta este hyperparameter tuning?",
+    "options": [
+      "Optimizar tradeoff bias-variance",
+      "Reducir tamaño del dataset",
+      "Aumentar dimensión de datos",
+      "Eliminar overfitting automáticamente"
+    ],
+    "correct": 0,
+    "explanation": "Grid search prueba combinaciones para hallar parámetros que mejor equilibran ajuste y generalización."
+  },
+  {
+    "question": "Para series temporales, MAPE=8% y RMSE=120 en ventas diarias. ¿Qué métrica reportarías ante stakeholders?",
+    "options": [
+      "MAPE, más interpretable en porcentaje",
+      "RMSE, mayor escala",
+      "Ninguna, usar AUC",
+      "Ninguna, usar silhouette"
+    ],
+    "correct": 0,
+    "explanation": "MAPE comunica error relativo (%), más fácil de entender para negocio."
+  },
+  {
+    "question": "En clustering jerárquico con dendrograma, ¿cómo decidirías número de clusters?",
+    "options": [
+      "Cortar dendrograma en mayor distancia vertical",
+      "Elegir k arbitrario",
+      "Usar silhouette en paralelo",
+      "Calcular AUC"
+    ],
+    "correct": 0,
+    "explanation": "Se corta dendrograma donde las distancias entre fusiones son mayores, separando clusters naturales."
+  },
+  {
+    "question": "Comparas PR curve y ROC curve para clasificación desequilibrada. ¿Cuál priorizar?",
+    "options": [
+      "PR curve, enfatiza precisión y recall en minoría",
+      "ROC curve siempre",
+      "ROC en datasets grandes",
+      "PR en clustering"
+    ],
+    "correct": 0,
+    "explanation": "En clases desequilibradas PR curve refleja mejor tradeoff en la clase minoritaria."
+  },
+  {
+    "question": "El classification report muestra support muy bajo para clase minoritaria. ¿Qué implica?",
+    "options": [
+      "Poca confianza en métricas para esa clase",
+      "Modelo perfecto",
+      "Necesidad de overfitting",
+      "Uso de Outlier detection"
+    ],
+    "correct": 0,
+    "explanation": "Support bajo reduce robustez de métricas; se recomienda recolectar más datos."
+  },
+  {
+    "question": "Para evaluar un autoencoder, mides reconstruction error medio=0.05. ¿Qué uso práctico tiene este valor?",
+    "options": [
+      "Detectar anomalías cuando error > umbral",
+      "Clasificar hiperparámetros",
+      "Agrupar datos",
+      "Reducir dimensionalidad con PCA"
+    ],
+    "correct": 0,
+    "explanation": "Errores altos indican observaciones atípicas, útil en detección de anomalías."
+  },
+  {
+    "question": "Tras aplicar t-SNE, visualizas clusters pero no hay separación clara. ¿Qué podrías intentar?",
+    "options": [
+      "Ajustar perplexity y learning rate",
+      "Usar PCA sin reducción",
+      "Eliminar normalización",
+      "Subir dimensionalidad original"
+    ],
+    "correct": 0,
+    "explanation": "t-SNE es sensible a perplexity y learning rate; ajustarlos mejora la visualización."
+  },
+  {
+    "question": "Se obtiene un informe de regresión con R²=0.7. ¿Cómo interpretarías esto?",
+    "options": [
+      "El modelo explica 70% de la varianza",
+      "El error medio es 0.7",
+      "La precisión es 70%",
+      "La recall es 70%"
+    ],
+    "correct": 0,
+    "explanation": "R² indica proporción de varianza de la variable respuesta explicada por el modelo."
+  },
+  {
+    "question": "Un modelo de texto obtiene BLEU score=0.3. ¿Es buen resultado en traducción automática?",
+    "options": [
+      "Moderado; BLEU ~0.3–0.5 es aceptable",
+      "Excelente; >0.9",
+      "Malo; <0.1",
+      "No aplica para texto"
+    ],
+    "correct": 0,
+    "explanation": "En traducción automática, valores alrededor de 0.3 suelen considerarse base de comparación."
+  },
+  {
+    "question": "Para evaluar un clasificador de imágenes, ¿qué mide el Top-5 accuracy?",
+    "options": [
+      "Fracción de muestras donde la etiqueta verdadera está entre las 5 predicciones más probables",
+      "Precisión de top 5 clases",
+      "Recall de top 5 clases",
+      "Ángulo entre vectores de características"
+    ],
+    "correct": 0,
+    "explanation": "Top-5 accuracy amplía criterio de acierto considerando las 5 predicciones con mayor probabilidad."
+  }
+]

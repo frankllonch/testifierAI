@@ -1,0 +1,321 @@
+[
+  {
+    "question": "¿Qué es una red neuronal artificial?",
+    "options": [
+      "Un modelo inspirado en el cerebro humano compuesto de nodos y conexiones",
+      "Una base de datos para almacenar neuronas",
+      "Un algoritmo de búsqueda en grafos",
+      "Un tipo de red de comunicaciones"
+    ],
+    "correct": 0,
+    "explanation": "Una red neuronal artificial está formada por nodos y conexiones ponderadas, procesando información mediante cálculos matemáticos para aprender patrones complejos.  [oai_citation:0‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Cuál es la función de la capa de entrada en una red neuronal?",
+    "options": [
+      "Recibir y presentar las características de los datos al modelo",
+      "Calcular el error de predicción",
+      "Actualizar los pesos mediante backpropagation",
+      "Aplicar regularización"
+    ],
+    "correct": 0,
+    "explanation": "La capa de entrada recibe los datos iniciales (por ejemplo, imágenes o vectores de características) y los pasa a la red para su procesamiento.  [oai_citation:1‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Cuál es el propósito de la capa oculta?",
+    "options": [
+      "Extraer características y aprender representaciones intermedias",
+      "Mostrar el resultado final al usuario",
+      "Normalizar los datos de entrada",
+      "Detener el entrenamiento"
+    ],
+    "correct": 0,
+    "explanation": "Las capas ocultas procesan la información recibida de la capa de entrada, aprendiendo representaciones no lineales que facilitan la predicción.  [oai_citation:2‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué hace la función de activación?",
+    "options": [
+      "Introduce no linealidad en el modelo para aprender patrones complejos",
+      "Normaliza los datos a escala 0–1",
+      "Divide los datos en batches",
+      "Calcula la tasa de aprendizaje"
+    ],
+    "correct": 0,
+    "explanation": "La función de activación añade no linealidad, permitiendo que la red aprenda relaciones complejas que una combinación lineal no podría capturar.  [oai_citation:3‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿En qué se diferencia un Perceptrón de ADALINE?",
+    "options": [
+      "El Perceptrón usa una función escalón, ADALINE minimiza el error cuadrático medio",
+      "ADALINE usa un escalón, el Perceptrón minimiza MSE",
+      "No hay diferencia, son idénticos",
+      "El Perceptrón es multicapa y ADALINE monocapa"
+    ],
+    "correct": 0,
+    "explanation": "El Perceptrón emplea una función de activación escalón y corrige pesos solo si hay error de clasificación, mientras ADALINE ajusta pesos minimizando el MSE.  [oai_citation:4‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué garantiza el teorema de convergencia del Perceptrón?",
+    "options": [
+      "Converge si los datos son linealmente separables",
+      "Converge siempre, sin condiciones",
+      "No converge nunca",
+      "Converge solo con redes profundas"
+    ],
+    "correct": 0,
+    "explanation": "El teorema asegura que el Perceptrón encontrará una solución de separación si los datos pueden separarse por una línea o hiperplano.  [oai_citation:5‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué es forward propagation?",
+    "options": [
+      "Proceso de calcular la salida de la red a partir de las entradas y pesos",
+      "Proceso de ajustar pesos mediante gradiente",
+      "Técnica de regularización",
+      "Método de validación cruzada"
+    ],
+    "correct": 0,
+    "explanation": "Forward propagation es el paso en el que se alimentan datos a la red y se calculan las activaciones hasta producir la salida.  [oai_citation:6‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué es backpropagation?",
+    "options": [
+      "Algoritmo para ajustar pesos tras calcular gradientes del error",
+      "Proceso de normalización de datos",
+      "Método de inicialización de pesos",
+      "Una función de activación"
+    ],
+    "correct": 0,
+    "explanation": "Backpropagation calcula los gradientes del error respecto a cada peso y los actualiza para minimizar la función de pérdida.  [oai_citation:7‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué significa una \"epoch\" en el entrenamiento?",
+    "options": [
+      "Una pasada completa por todo el conjunto de entrenamiento",
+      "Cada actualización de peso",
+      "Cada batch de datos",
+      "La primera iteración solamente"
+    ],
+    "correct": 0,
+    "explanation": "Una epoch corresponde a procesar todas las muestras de entrenamiento una vez durante el entrenamiento.  [oai_citation:8‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué caracteriza a la función ReLU?",
+    "options": [
+      "Devuelve 0 si la entrada es negativa y x si es positiva",
+      "Es suave y diferenciable en cero",
+      "Devuelve valores entre 0 y 1",
+      "Calcula probabilidades"
+    ],
+    "correct": 0,
+    "explanation": "ReLU (Rectified Linear Unit) activa solo las neuronas con entrada positiva, lo que facilita el entrenamiento en redes profundas.  [oai_citation:9‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Para qué sirve la función Softmax?",
+    "options": [
+      "Convertir logits en probabilidades que suman 1",
+      "Introducir no linealidad en una sola neurona",
+      "Calcular la tasa de aprendizaje",
+      "Eliminar overfitting"
+    ],
+    "correct": 0,
+    "explanation": "Softmax normaliza las salidas de la capa final para obtener una distribución de probabilidad sobre las clases.  [oai_citation:10‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué es overfitting?",
+    "options": [
+      "Cuando el modelo aprende demasiado bien el ruido y pierde capacidad de generalizar",
+      "Cuando el modelo no aprende nada",
+      "Cuando el modelo es muy rápido",
+      "Cuando el modelo usa regularización excesiva"
+    ],
+    "correct": 0,
+    "explanation": "El overfitting ocurre al ajustar demasiado a los datos de entrenamiento, dañando el rendimiento en nuevos datos.  [oai_citation:11‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué es underfitting?",
+    "options": [
+      "Cuando el modelo es demasiado simple para capturar patrones relevantes",
+      "Cuando el modelo memoriza el ruido",
+      "Cuando el modelo no converge",
+      "Cuando el modelo es muy profundo"
+    ],
+    "correct": 0,
+    "explanation": "El underfitting sucede cuando el modelo no aprende bien los patrones y tiene alto error tanto en entrenamiento como en prueba.  [oai_citation:12‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué propósito tiene la regularización Dropout?",
+    "options": [
+      "Reducir overfitting apagando neuronas aleatoriamente durante el entrenamiento",
+      "Acelerar la convergencia",
+      "Normalizar los datos",
+      "Incrementar la profundidad de la red"
+    ],
+    "correct": 0,
+    "explanation": "Dropout previene el sobreajuste al desactivar aleatoriamente un porcentaje de neuronas en cada iteración.  [oai_citation:13‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué es Early Stopping?",
+    "options": [
+      "Interrumpir el entrenamiento cuando la validación deja de mejorar",
+      "Aumentar la tasa de aprendizaje",
+      "Detener la propagación hacia atrás",
+      "Duplicar el tamaño del batch"
+    ],
+    "correct": 0,
+    "explanation": "Early Stopping detiene el entrenamiento si la métrica de validación no mejora tras varias epochs, evitando overfitting.  [oai_citation:14‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué mide el error cuadrático medio (MSE)?",
+    "options": [
+      "El promedio de los errores al cuadrado entre predicción y valor real",
+      "La proporción de aciertos",
+      "La velocidad de convergencia",
+      "La dimensionalidad de los datos"
+    ],
+    "correct": 0,
+    "explanation": "MSE calcula la media de los errores al cuadrado, penalizando más errores grandes.  [oai_citation:15‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué mide la entropía cruzada binaria?",
+    "options": [
+      "La disimilitud entre distribuciones de probabilidad en clasificación binaria",
+      "La distancia euclídea entre vectores",
+      "La varianza explicada",
+      "La tasa de aciertos"
+    ],
+    "correct": 0,
+    "explanation": "La entropía cruzada cuantifica el error en predicciones probabilísticas para dos clases.  [oai_citation:16‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué diferencia hay entre L1 y L2 regularización?",
+    "options": [
+      "L1 produce esparsidad (coeficientes cero), L2 los reduce sin anularlos",
+      "L1 ajusta la tasa de aprendizaje, L2 ajusta el batch",
+      "No hay diferencia",
+      "L1 es para redes profundas, L2 para redes superficiales"
+    ],
+    "correct": 0,
+    "explanation": "L1 penaliza la suma de valores absolutos y puede llevar a coeficientes cero, L2 penaliza cuadrados reduciendo magnitudes sin anular.  [oai_citation:17‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué representa el bias (sesgo) en una neurona?",
+    "options": [
+      "Un término independiente que desplaza la función de activación",
+      "La tasa de aprendizaje",
+      "El tamaño del batch",
+      "La salida de la capa anterior"
+    ],
+    "correct": 0,
+    "explanation": "El bias es un parámetro que ajusta la activación sin depender únicamente de las entradas, permitiendo flexibilidad en la frontera de decisión.  [oai_citation:18‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Cuál es el objetivo del descenso de gradiente?",
+    "options": [
+      "Minimizar la función de pérdida ajustando los pesos",
+      "Maximizar la tasa de aprendizaje",
+      "Eliminar capas ocultas",
+      "Validar el modelo"
+    ],
+    "correct": 0,
+    "explanation": "El descenso de gradiente actualiza iterativamente los pesos para reducir el valor de la función de pérdida.  [oai_citation:19‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué caracteriza a una red profunda (DNN)?",
+    "options": [
+      "Posee varias capas ocultas que permiten extraer características jerárquicas",
+      "Solo tiene una capa oculta",
+      "No usa funciones de activación",
+      "No se puede entrenar con backpropagation"
+    ],
+    "correct": 0,
+    "explanation": "Las DNN contienen múltiples capas ocultas, lo que les permite aprender representaciones cada vez más complejas.  [oai_citation:20‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué ventaja ofrece la función Swish?",
+    "options": [
+      "Combina linealidad y suavidad, mejorando la convergencia en algunos casos",
+      "Es idéntica a ReLU",
+      "Solo funciona con datos binarios",
+      "No es diferenciable"
+    ],
+    "correct": 0,
+    "explanation": "Swish es suave y no lineal, manteniendo información de gradientes para valores negativos y mejorando a veces el rendimiento.  [oai_citation:21‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué ventaja tiene la función Softplus?",
+    "options": [
+      "Es una versión suave de ReLU, diferenciable en todo el dominio",
+      "Es igual a la función escalón",
+      "Devuelve valores binarios",
+      "No es continua"
+    ],
+    "correct": 0,
+    "explanation": "Softplus aproxima ReLU de forma suave, evitando discontinuidades en el gradiente.  [oai_citation:22‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué describe la arquitectura CNN?",
+    "options": [
+      "Utiliza capas de convolución para extraer características locales en datos estructurados espacialmente",
+      "Es un perceptrón simple",
+      "Solo usa funciones lineales",
+      "No aplica en imágenes"
+    ],
+    "correct": 0,
+    "explanation": "Las CNN aplican filtros locales que capturan patrones espaciales, siendo ideales para procesamiento de imágenes.  [oai_citation:23‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Para qué se usan las RNN?",
+    "options": [
+      "Modelar secuencias y dependencias temporales en datos",
+      "Procesar imágenes",
+      "Realizar clustering",
+      "Realizar transformaciones lineales"
+    ],
+    "correct": 0,
+    "explanation": "Las RNN mantienen una memoria interna que les permite procesar secuencias y capturar dependencias temporales.  [oai_citation:24‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué función tiene la capa de salida?",
+    "options": [
+      "Producir la predicción final del modelo según la tarea (clasificación o regresión)",
+      "Almacenar pesos",
+      "Eliminar overfitting",
+      "Aumentar la tasa de aprendizaje"
+    ],
+    "correct": 0,
+    "explanation": "La capa de salida genera la predicción final (por ejemplo, probabilidades o valores continuos) tras procesar las capas anteriores.  [oai_citation:25‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué es una red generativa (GAN)?",
+    "options": [
+      "Arquitectura con generador y discriminador que aprende a crear datos sintéticos",
+      "Perceptrón de una sola capa",
+      "Solo usa funciones lineales",
+      "No emplea backpropagation"
+    ],
+    "correct": 0,
+    "explanation": "Las GAN consisten en un generador que crea muestras y un discriminador que las evalúa para mejorar la calidad sintética.  [oai_citation:26‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué es el bias-variance tradeoff?",
+    "options": [
+      "Equilibrio entre sesgo y varianza para minimizar el error total de generalización",
+      "Diferencia entre learning rate y batch size",
+      "Tipo de optimizador",
+      "Función de activación"
+    ],
+    "correct": 0,
+    "explanation": "Este tradeoff busca un modelo ni demasiado simple (alto sesgo) ni demasiado complejo (alta varianza) para lograr buena generalización.  [oai_citation:27‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  },
+  {
+    "question": "¿Qué representa la función de pérdida?",
+    "options": [
+      "La medida cuantitativa del error entre predicciones y valores reales",
+      "La arquitectura de la red",
+      "El hiperparámetro de dropout",
+      "La tasa de convergence"
+    ],
+    "correct": 0,
+    "explanation": "La función de pérdida cuantifica cuán lejos están las predicciones del modelo de los valores reales, guiando el entrenamiento.  [oai_citation:28‡Tema_04.pdf](file-service://file-5Qj2n59gUqbuuQhmvGXys1)"
+  }
+]

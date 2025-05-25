@@ -1,0 +1,721 @@
+    [
+        {
+        "question": "¿Qué cláusula SQL indica la tabla origen de los datos?",
+        "options": ["FROM", "WHERE", "SELECT", "JOIN"],
+        "correct": 0,
+        "explanation": "FROM especifica la(s) tabla(s) de la que se extraen los datos en la consulta."
+        },
+        {
+        "question": "¿Cuál es la función de la cláusula WHERE?",
+        "options": ["Filtrar filas antes de agrupar", "Ordenar resultados", "Seleccionar columnas", "Unir tablas"],
+        "correct": 0,
+        "explanation": "WHERE filtra filas según una condición antes de aplicar GROUP BY u otras operaciones."
+        },
+        {
+        "question": "¿Para qué sirve SELECT DISTINCT?",
+        "options": ["Eliminar duplicados", "Contar filas", "Modificar datos", "Crear índices"],
+        "correct": 0,
+        "explanation": "DISTINCT elimina filas duplicadas del conjunto de resultados."
+        },
+        {
+        "question": "¿Cuál es la sintaxis básica para ordenar resultados en orden descendente?",
+        "options": ["ORDER BY columna DESC", "SORT BY columna DESC", "ORDER columna DESC", "GROUP BY columna DESC"],
+        "correct": 0,
+        "explanation": "ORDER BY columna DESC ordena los resultados descendientemente por esa columna."
+        },
+        {
+        "question": "¿Qué hace GROUP BY en SQL?",
+        "options": ["Agrupa filas con mismo valor", "Filtra filas", "Ordena resultados", "Limita filas"],
+        "correct": 0,
+        "explanation": "GROUP BY agrupa filas que comparten valores idénticos en las columnas indicadas."
+        },
+        {
+        "question": "¿Qué cláusula filtra grupos tras GROUP BY?",
+        "options": ["HAVING", "WHERE", "ORDER BY", "LIMIT"],
+        "correct": 0,
+        "explanation": "HAVING aplica condiciones a grupos ya formados, mientras que WHERE filtra antes."
+        },
+        {
+        "question": "¿Cómo se une una tabla a sí misma?",
+        "options": ["SELF JOIN", "CROSS JOIN", "NATURAL JOIN", "LEFT JOIN"],
+        "correct": 0,
+        "explanation": "SELF JOIN une la misma tabla como si fuese otra, usando alias."
+        },
+        {
+        "question": "¿Qué JOIN devuelve todas las filas de la tabla izquierda?",
+        "options": ["LEFT JOIN", "INNER JOIN", "RIGHT JOIN", "FULL JOIN"],
+        "correct": 0,
+        "explanation": "LEFT JOIN incluye todas las filas de la tabla izquierda y las coincidentes de la derecha."
+        },
+        {
+        "question": "¿Cuál es la diferencia entre INNER JOIN y LEFT JOIN?",
+        "options": ["INNER solo coincidentes; LEFT incluye todas de izquierda", "LEFT solo coincidentes; INNER incluye todas", "Ninguna", "INNER agrupa; LEFT filtra"],
+        "correct": 0,
+        "explanation": "INNER JOIN muestra sólo filas coincidentes en ambas tablas; LEFT JOIN incluye también no coincidentes de la izquierda."
+        },
+        {
+        "question": "¿Para qué sirve UNION en SQL?",
+        "options": ["Combinar dos SELECT eliminando duplicados", "Agrupar resultados", "Ordenar filas", "Filtrar filas"],
+        "correct": 0,
+        "explanation": "UNION combina resultados de dos consultas SELECT y elimina duplicados."
+        },
+        {
+        "question": "¿Cómo limitas el número de filas devueltas?",
+        "options": ["LIMIT n", "TOP n", "MAX n", "FETCH n"],
+        "correct": 0,
+        "explanation": "LIMIT n restringe el número de filas devueltas a n (MySQL, PostgreSQL)."
+        },
+        {
+        "question": "¿Qué comando elimina filas de una tabla?",
+        "options": ["DELETE FROM tabla WHERE condición", "DROP TABLE tabla", "TRUNCATE tabla", "REMOVE FROM tabla"],
+        "correct": 0,
+        "explanation": "DELETE FROM tabla WHERE condición borra filas que cumplen la condición sin eliminar la tabla."
+        },
+        {
+        "question": "¿Cuál borra toda la tabla rápidamente?",
+        "options": ["TRUNCATE TABLE tabla", "DROP TABLE tabla", "DELETE TABLE tabla", "REMOVE TABLE tabla"],
+        "correct": 0,
+        "explanation": "TRUNCATE TABLE borra todas las filas de la tabla de forma eficiente sin eliminar su estructura."
+        },
+        {
+        "question": "¿Cómo inserto un nuevo registro en SQL?",
+        "options": ["INSERT INTO tabla (cols) VALUES (vals)", "ADD INTO tabla VALUES", "INSERT tabla VALUES", "CREATE ROW tabla"],
+        "correct": 0,
+        "explanation": "INSERT INTO tabla (cols) VALUES (vals) añade un nuevo registro con los valores especificados."
+        },
+        {
+        "question": "¿Cuál es la sintaxis para actualizar datos?",
+        "options": ["UPDATE tabla SET col=val WHERE condición", "MODIFY tabla SET", "CHANGE tabla", "ALTER tabla VALUES"],
+        "correct": 0,
+        "explanation": "UPDATE tabla SET col=val WHERE condición modifica los valores de las filas que cumplen la condición."
+        },
+        {
+        "question": "¿Qué hace CREATE INDEX?",
+        "options": ["Crea un índice para acelerar consultas", "Crea tabla nueva", "Inserta datos", "Agrupa filas"],
+        "correct": 0,
+        "explanation": "CREATE INDEX crea un índice en una columna para mejorar el rendimiento de búsqueda."
+        },
+        {
+        "question": "¿Qué es una clave primaria?",
+        "options": ["Identificador único de cada fila", "Índice secundario", "Tabla particionada", "Vista"],
+        "correct": 0,
+        "explanation": "La clave primaria garantiza unicidad e identifica de forma única cada registro."
+        },
+        {
+        "question": "¿Para qué sirve COMMIT?",
+        "options": ["Guardar transacción", "Deshacer cambios", "Iniciar transacción", "Bloquear tabla"],
+        "correct": 0,
+        "explanation": "COMMIT confirma todos los cambios realizados en la transacción actual."
+        },
+        {
+        "question": "¿Cómo deshago cambios en una transacción?",
+        "options": ["ROLLBACK", "UNDO", "REVERT", "ABORT"],
+        "correct": 0,
+        "explanation": "ROLLBACK revierte todos los cambios de la transacción actual."
+        },
+        {
+        "question": "¿Qué son vistas en SQL?",
+        "options": ["Consultas virtuales almacenadas", "Tablas temporales", "Índices", "Triggers"],
+        "correct": 0,
+        "explanation": "Una vista es una consulta definida y almacenada que se comporta como una tabla virtual."
+        },
+        {
+        "question": "¿Cuál forma normal elimina grupos repetidos?",
+        "options": ["Primera Forma Normal (1NF)", "Segunda Forma Normal (2NF)", "Tercera Forma Normal (3NF)", "BCNF"],
+        "correct": 0,
+        "explanation": "1NF requiere que cada celda contenga un único valor atómico."
+        },
+        {
+        "question": "¿Qué normalización atiende dependencias parciales?",
+        "options": ["2NF", "1NF", "3NF", "BCNF"],
+        "correct": 0,
+        "explanation": "2NF exige que cada atributo no clave dependa de toda la clave primaria."
+        },
+        {
+        "question": "¿Qué normalización elimina dependencias transitivas?",
+        "options": ["3NF", "1NF", "2NF", "BCNF"],
+        "correct": 0,
+        "explanation": "3NF requiere que no existan dependencias de atributos no clave entre sí."
+        },
+        {
+        "question": "¿Qué comando crea una tabla nueva?",
+        "options": ["CREATE TABLE", "MAKE TABLE", "NEW TABLE", "BUILD TABLE"],
+        "correct": 0,
+        "explanation": "CREATE TABLE define la estructura de una tabla y sus columnas."
+        },
+        {
+        "question": "¿Cómo agrego una columna a una tabla existente?",
+        "options": ["ALTER TABLE tabla ADD COLUMN col tipo", "ALTER tabla ADD col", "MODIFY TABLE ADD", "UPDATE TABLE ADD"],
+        "correct": 0,
+        "explanation": "ALTER TABLE tabla ADD COLUMN col tipo añade una columna nueva."
+        },
+        {
+        "question": "¿Qué sintaxis es correcta para una subconsulta escalar?",
+        "options": ["SELECT col, (SELECT MAX(col2) FROM t2) FROM t1", "SELECT col FROM (SELECT col2 FROM t2)", "SELECT col1 FROM t1 WHERE t1 IN t2", "SELECT col FROM t1 SUBQUERY"],
+        "correct": 0,
+        "explanation": "Una subconsulta en SELECT permite calcular un valor agregado para cada fila."
+        },
+        {
+        "question": "¿Qué operador lógico SQL evalúa OR?",
+        "options": ["Devuelve verdadero si al menos una condición es verdadera", "Solo si ambas son verdaderas", "Niega condición", "Evalúa todas iguales"],
+        "correct": 0,
+        "explanation": "OR devuelve verdadero cuando cualquiera de las condiciones es verdadera."
+        },
+        {
+        "question": "¿Cuál es la sintaxis básica de una consulta MongoDB para todos los documentos?",
+        "options": ["db.collection.find({})", "db.find(collection)", "db.collection.get()", "db.collection.query()"],
+        "correct": 0,
+        "explanation": "find({}) sin filtro devuelve todos los documentos de la colección."
+        },
+        {
+        "question": "¿Cómo inserto un documento en MongoDB?",
+        "options": ["db.collection.insertOne(doc)", "db.collection.add(doc)", "db.insert(doc)", "db.collection.save(doc)"],
+        "correct": 0,
+        "explanation": "insertOne() agrega un único documento a la colección."
+        },
+        {
+        "question": "¿Qué método inserta varios documentos a la vez?",
+        "options": ["insertMany()", "bulkInsert()", "addMany()", "insertAll()"],
+        "correct": 0,
+        "explanation": "insertMany() permite insertar un array de documentos en una operación."
+        },
+        {
+        "question": "¿Cómo actualizo un campo en MongoDB?",
+        "options": ["db.collection.updateOne(filter, { $set: { campo:valor } })", "db.collection.modify()", "db.update(filter).set()", "db.collection.set()"],
+        "correct": 0,
+        "explanation": "updateOne() con $set modifica el campo especificado en el documento que cumple filter."
+        },
+        {
+        "question": "¿Para qué sirve deleteMany()?",
+        "options": ["Eliminar todos los documentos que cumplan el filtro", "Eliminar un índice", "Eliminar la colección", "Limpiar datos internos"],
+        "correct": 0,
+        "explanation": "deleteMany(filter) borra todos los documentos que satisfacen la condición."
+        },
+        {
+        "question": "¿Qué hace db.collection.createIndex({ campo:1 })?",
+        "options": ["Crea un índice ascendente en campo", "Crea un índice descendente", "Borra índice", "Inserta registro"],
+        "correct": 0,
+        "explanation": "createIndex({campo:1}) crea un índice ascendente para mejorar consultas."
+        },
+        {
+        "question": "¿Qué operador filtra en agregación?",
+        "options": ["$match", "$filter", "$find", "$where"], 
+        "correct": 0,
+        "explanation": "$match en aggregation funciona como WHERE en SQL."
+        },
+        {
+        "question": "¿Qué operador agrupa datos en el pipeline?",
+        "options": ["$group", "$aggregate", "$sum", "$count"],
+        "correct": 0,
+        "explanation": "$group agrupa documentos según _id y aplica agregaciones como $sum o $avg."
+        },
+        {
+        "question": "¿Para qué sirve $project?",
+        "options": ["Incluir o excluir campos", "Agrupar datos", "Ordenar documentos", "Fusionar colecciones"],
+        "correct": 0,
+        "explanation": "$project devuelve sólo los campos especificados y puede crear nuevos mediante expresiones."
+        },
+        {
+        "question": "¿Qué operador convierte un array en múltiples documentos?",
+        "options": ["$unwind", "$split", "$flatten", "$expand"],
+        "correct": 0,
+        "explanation": "$unwind descompone cada elemento de un array en documentos separados."
+        },
+        {
+        "question": "¿Qué etapa simula JOIN en MongoDB?",
+        "options": ["$lookup", "$merge", "$join", "$link"],
+        "correct": 0,
+        "explanation": "$lookup permite combinar documentos de diferentes colecciones similar a JOIN."
+        },
+        {
+        "question": "¿Cuál es la diferencia clave SQL vs MongoDB?",
+        "options": ["SQL es relacional con esquema fijo; Mongo es documental sin esquema fijo", "Mongo es relacional; SQL documental", "Ambos igual", "SQL no usa índices"],
+        "correct": 0,
+        "explanation": "SQL usa tablas con esquema predefinido; MongoDB almacena documentos JSON/BSON sin esquema obligatorio."
+        },
+        {
+        "question": "¿Qué modelo de consistencia suele ofrecer MongoDB?",
+        "options": ["Consistencia eventual", "Consistencia fuerte", "No tiene consistencia", "Transaccional"],
+        "correct": 0,
+        "explanation": "MongoDB replica datos con consistencia eventual por defecto para alta disponibilidad."
+        },
+        {
+        "question": "¿Para qué sirve db.collection.stats()?",
+        "options": ["Obtener estadísticas de la colección", "Actualizar stats", "Eliminar datos", "Crear colección"],
+        "correct": 0,
+        "explanation": "stats() devuelve métricas como tamaño, número de documentos e índices."
+        },
+        {
+        "question": "¿Qué comando muestra el plan de ejecución en MongoDB?",
+        "options": ["explain()", "plan()", "profile()", "explainPlan()"],
+        "correct": 0,
+        "explanation": "db.collection.find().explain() muestra detalles del plan de consulta."
+        },
+        {
+        "question": "¿Cómo elimino un índice en MongoDB?",
+        "options": ["db.collection.dropIndex('nombre')", "db.dropIndex()", "db.collection.deleteIndex()", "db.index.drop()"],
+        "correct": 0,
+        "explanation": "dropIndex('nombre') borra el índice especificado de la colección."
+        },
+        {
+        "question": "¿Qué es un sharding en MongoDB?",
+        "options": ["Partición horizontal de datos", "Replica set", "Índice compuesto", "Copia de seguridad"],
+        "correct": 0,
+        "explanation": "El sharding distribuye datos en múltiples servidores para escala horizontal."
+        },
+        {
+        "question": "¿Qué colección almacena archivos grandes en MongoDB?",
+        "options": ["GridFS", "fs.chunks", "fs.files", "blobStorage"],
+        "correct": 0,
+        "explanation": "GridFS divide archivos en chunks y los guarda en fs.chunks y fs.files."
+        },
+        {
+        "question": "¿Cuál operador filtra por existencia de campo?",
+        "options": ["$exists", "$match", "$has", "$contains"],
+        "correct": 0,
+        "explanation": "$exists:true filtra documentos donde el campo existe."
+        },
+        {
+        "question": "¿Qué método limita resultados en find()?",
+        "options": ["limit()", "skip()", "max()", "count()"],
+        "correct": 0,
+        "explanation": "limit(n) restringe la cantidad de documentos devueltos."
+        },
+        {
+        "question": "¿Cómo omito los primeros n documentos?",
+        "options": ["skip(n)", "offset(n)", "drop(n)", "slice(n)"],
+        "correct": 0,
+        "explanation": "skip(n) ignora los primeros n documentos antes de devolver resultados."
+        },
+        {
+        "question": "¿Qué índice es útil para consultas geoespaciales?",
+        "options": ["2dsphere", "text", "hashed", "unique"],
+        "correct": 0,
+        "explanation": "El índice 2dsphere permite consultas basadas en geometría GeoJSON."
+        },
+        {
+        "question": "¿Cuál es la ventaja de transacciones en MongoDB?",
+        "options": ["ACID multi-documentos", "Rendimiento más alto", "Sincronización inmediata", "Elimina índices"],
+        "correct": 0,
+        "explanation": "Desde la versión 4.0, MongoDB soporta transacciones ACID en múltiples documentos."
+        }
+        ,
+        {
+          "question": "¿Qué hace la cláusula `WITH` en SQL (CTE)?",
+          "options": [
+            "Define expresiones de tabla comunes reutilizables",
+            "Crea índices temporales",
+            "Ejecuta transacciones",
+            "Define triggers"
+          ],
+          "correct": 0,
+          "explanation": "WITH permite crear subconsultas nombradas (CTE) que pueden referenciarse varias veces en la misma consulta."
+        },
+        {
+          "question": "¿Para qué sirve la función de ventana `ROW_NUMBER()`?",
+          "options": [
+            "Asignar un número incremental a cada fila en particiones",
+            "Contar filas totales",
+            "Agrupar resultados",
+            "Actualizar registros"
+          ],
+          "correct": 0,
+          "explanation": "ROW_NUMBER() asigna un ranking único dentro de cada partición definida por OVER()."
+        },
+        {
+          "question": "¿Qué hace `PARTITION BY` en una función de ventana?",
+          "options": [
+            "Divide el conjunto en grupos independientes",
+            "Filtra resultados antes de la ventana",
+            "Limita el número de filas",
+            "Combina tablas"
+          ],
+          "correct": 0,
+          "explanation": "PARTITION BY agrupa filas para aplicar funciones de ventana dentro de cada partición."
+        },
+        {
+          "question": "¿Para qué se usa la cláusula `OVER()` en SQL?",
+          "options": [
+            "Aplicar funciones de ventana a filas sin agrupar",
+            "Definir triggers",
+            "Crear vistas",
+            "Eliminar duplicados"
+          ],
+          "correct": 0,
+          "explanation": "OVER() especifica la partición y el orden para funciones de ventana como RANK(), SUM() OVER(), etc."
+        },
+        {
+          "question": "¿Qué instrucción crea un trigger que se ejecuta antes de INSERT?",
+          "options": [
+            "CREATE TRIGGER nombre BEFORE INSERT ON tabla",
+            "CREATE PROCEDURE nombre BEFORE INSERT",
+            "CREATE FUNCTION nombre BEFORE INSERT",
+            "ALTER TABLE tabla ADD TRIGGER"
+          ],
+          "correct": 0,
+          "explanation": "Un trigger BEFORE INSERT se define con CREATE TRIGGER ... BEFORE INSERT ON tabla."
+        },
+        {
+          "question": "¿Qué hace `MERGE` en SQL Server o Oracle?",
+          "options": [
+            "Combina INSERT, UPDATE y DELETE en una sola operación",
+            "Elimina duplicados",
+            "Crea índices temporales",
+            "Ejecuta una consulta recursiva"
+          ],
+          "correct": 0,
+          "explanation": "MERGE permite sincronizar dos tablas insertando, actualizando o eliminando según condiciones."
+        },
+        {
+          "question": "¿Cuál es la sintaxis básica de un cursor en SQL?",
+          "options": [
+            "DECLARE cursor_name CURSOR FOR SELECT ...; OPEN cursor_name; FETCH NEXT;",
+            "CREATE CURSOR cursor_name AS SELECT ...;",
+            "CURSOR cursor_name SELECT ...;",
+            "DECLARE cursor_name AS CURSOR SELECT ..."
+          ],
+          "correct": 0,
+          "explanation": "Se declara con DECLARE ... CURSOR FOR, luego OPEN, FETCH NEXT y CLOSE."
+        },
+        {
+          "question": "¿Qué hace `FETCH FIRST 10 ROWS ONLY` en SQL estándar?",
+          "options": [
+            "Limita los resultados a las primeras 10 filas",
+            "Ordena ascendente",
+            "Agrupa 10 filas",
+            "Salta 10 filas"
+          ],
+          "correct": 0,
+          "explanation": "FETCH FIRST N ROWS ONLY es la sintaxis SQL ANSI para limitar filas."
+        },
+        {
+          "question": "¿Para qué sirve `CREATE OR REPLACE VIEW`?",
+          "options": [
+            "Crear o actualizar una vista existente",
+            "Crear un índice",
+            "Crear una tabla temporal",
+            "Insertar datos"
+          ],
+          "correct": 0,
+          "explanation": "OR REPLACE permite redefinir una vista sin eliminarla manualmente."
+        },
+        {
+          "question": "¿Qué hace la función `JSON_VALUE()` en SQL Server?",
+          "options": [
+            "Extrae un valor escalar de un documento JSON",
+            "Convierte texto a JSON",
+            "Valida un JSON",
+            "Formatea JSON"
+          ],
+          "correct": 0,
+          "explanation": "JSON_VALUE(extraePathExpression) devuelve un valor escalar de JSON almacenado en columna."
+        },
+        {
+          "question": "¿Qué instrucción actualiza varios registros basados en JOIN?",
+          "options": [
+            "UPDATE t1 SET ... FROM t1 JOIN t2 ON ...",
+            "ALTER t1 UPDATE JOIN t2",
+            "UPDATE JOIN t1,t2 SET ...",
+            "MERGE INTO t1 USING t2"
+          ],
+          "correct": 0,
+          "explanation": "UPDATE ... FROM ... JOIN ... es sintaxis de SQL Server/PostgreSQL para actualizar con join."
+        },
+        {
+          "question": "¿Qué comando activa un planificador de trabajo en Oracle?",
+          "options": [
+            "DBMS_SCHEDULER.CREATE_JOB",
+            "CREATE EVENT",
+            "SCHEDULE JOB",
+            "DB_CREATE_JOB"
+          ],
+          "correct": 0,
+          "explanation": "DBMS_SCHEDULER.CREATE_JOB permite crear tareas programadas en Oracle."
+        },
+        {
+          "question": "¿Cómo se escribe un procedimiento almacenado en MySQL?",
+          "options": [
+            "CREATE PROCEDURE nombre() BEGIN ... END",
+            "CREATE FUNCTION nombre() { ... }",
+            "MAKE PROCEDURE nombre AS BEGIN ... END",
+            "CREATE PROC nombre() DO ... END"
+          ],
+          "correct": 0,
+          "explanation": "MySQL usa CREATE PROCEDURE ... BEGIN ... END para procedimientos."
+        },
+        {
+          "question": "¿Qué palabra clave SQL marca un inicio de transacción manual?",
+          "options": [
+            "BEGIN TRANSACTION",
+            "START TRANSACTION",
+            "LOCK TABLES",
+            "SAVEPOINT"
+          ],
+          "correct": 0,
+          "explanation": "BEGIN TRANSACTION o START TRANSACTION inicia una transacción explícita."
+        },
+        {
+          "question": "¿Para qué sirve `SAVEPOINT`?",
+          "options": [
+            "Crear punto de retorno parcial en una transacción",
+            "Bloquear tablas",
+            "Crear índice",
+            "Eliminar filas"
+          ],
+          "correct": 0,
+          "explanation": "SAVEPOINT permite volver a ese punto con ROLLBACK TO SAVEPOINT."
+        },
+        {
+          "question": "¿Qué hace `ROLLBACK TO SAVEPOINT`?",
+          "options": [
+            "Revierte cambios hasta el savepoint sin abortar toda la transacción",
+            "Elimina el savepoint",
+            "Confirma cambios",
+            "Crea un savepoint"
+          ],
+          "correct": 0,
+          "explanation": "ROLLBACK TO SAVEPOINT revierte solo las operaciones posteriores al savepoint."
+        },
+        {
+          "question": "¿Qué tipo de índice en MongoDB acelera búsquedas de campos de texto?",
+          "options": [
+            "Índice de texto (`text`)",
+            "Índice geoespacial (`2dsphere`)",
+            "Índice hashed (`hashed`)",
+            "Índice único (`unique`)"
+          ],
+          "correct": 0,
+          "explanation": "createIndex({campo:'text'}) habilita búsquedas de texto completo."
+        },
+        {
+          "question": "¿Qué operador de agregación en MongoDB proyecta campos calculados?",
+          "options": [
+            "$project",
+            "$addFields",
+            "$set",
+            "$replaceWith"
+          ],
+          "correct": 0,
+          "explanation": "$project define qué campos incluir y permite expresiones para nuevos campos."
+        },
+        {
+          "question": "¿Cuál es la forma de upsert en MongoDB?",
+          "options": [
+            "updateOne(filter, update, { upsert: true })",
+            "insertOrUpdateOne()",
+            "updateOneUpsert(filter, update)",
+            "save()"
+          ],
+          "correct": 0,
+          "explanation": "La opción upsert:true crea un documento si no existe filter."
+        },
+        {
+          "question": "¿Qué comando inicia el profiler en MongoDB?",
+          "options": [
+            "db.setProfilingLevel(2)",
+            "db.enableProfiling()",
+            "profileOn()",
+            "db.system.profile.enable()"
+          ],
+          "correct": 0,
+          "explanation": "setProfilingLevel(2) registra todas las operaciones en el profiler."
+        },
+        {
+          "question": "¿Qué instrucción elimina todas las filas de una colección en MongoDB?",
+          "options": [
+            "db.collection.deleteMany({})",
+            "db.collection.removeAll()",
+            "db.collection.clear()",
+            "db.collection.truncate()"
+          ],
+          "correct": 0,
+          "explanation": "deleteMany({}) elimina todos los documentos que cumplen el filtro vacío."
+        },
+        {
+          "question": "¿Para qué sirve un índice TTL en MongoDB?",
+          "options": [
+            "Eliminar documentos automáticamente tras cierto tiempo",
+            "Mejorar agregaciones",
+            "Acelerar transacciones",
+            "Crear shards"
+          ],
+          "correct": 0,
+          "explanation": "Un índice TTL borra documentos con campos DateTime mayores al expireAfterSeconds."
+        },
+        {
+          "question": "¿Qué hace `db.collection.watch()`?",
+          "options": [
+            "Crear un change stream para escuchar cambios en la colección",
+            "Iniciar transacción",
+            "Desactivar colección",
+            "Copia datos"
+          ],
+          "correct": 0,
+          "explanation": "watch() abre un cursor de change stream que emite eventos de inserción, actualización, etc."
+        },
+        {
+          "question": "¿Cómo habilitas transacciones multi-documento en MongoDB?",
+          "options": [
+            "session.startTransaction()",
+            "db.beginTransaction()",
+            "db.transactionStart()",
+            "startMultiTransaction()"
+          ],
+          "correct": 0,
+          "explanation": "En driver, session.startTransaction() inicia transacción, luego commitTransaction()."
+        },
+        {
+          "question": "¿Qué hace `$lookup` en un pipeline de agregación?",
+          "options": [
+            "Join con otra colección",
+            "Filtrar documentos",
+            "Ordenar resultados",
+            "Eliminar documentos"
+          ],
+          "correct": 0,
+          "explanation": "$lookup añade un array de documentos coincidentes de otra colección similar a JOIN."
+        },
+        {
+          "question": "¿Cuál es la sintaxis para concatenar cadenas en SQL estándar?",
+          "options": [
+            "col1 || col2",
+            "CONCAT(col1, col2)",
+            "col1 + col2",
+            "|| col1, col2"
+          ],
+          "correct": 0,
+          "explanation": "El operador || concatena en SQL ANSI; CONCAT() es alternativa en MySQL."
+        },
+        {
+          "question": "¿Qué hace `GREATEST(col1, col2)`?",
+          "options": [
+            "Devuelve el mayor valor de las columnas",
+            "Compara y retorna verdadero o falso",
+            "Agrupa resultados",
+            "Ordena columnas"
+          ],
+          "correct": 0,
+          "explanation": "GREATEST retorna el valor máximo entre sus argumentos."
+        },
+        {
+          "question": "¿Qué función convierte texto a minúsculas en SQL?",
+          "options": [
+            "LOWER(texto)",
+            "LCASE(texto)",
+            "TO_LOWER(texto)",
+            "MINUSC(texto)"
+          ],
+          "correct": 0,
+          "explanation": "LOWER() convierte caracteres a minúsculas; LCASE() es alias en MySQL."
+        },
+        {
+          "question": "¿Cómo obtienes la diferencia en días entre dos fechas?",
+          "options": [
+            "DATEDIFF(fecha1, fecha2)",
+            "DATE_DIFF(fecha1, fecha2)",
+            "DIFF_DAYS(fecha1, fecha2)",
+            "fecha1 - fecha2"
+          ],
+          "correct": 0,
+          "explanation": "DATEDIFF devuelve el número de días entre dos fechas (sintaxis varía por SGBD)."
+        },
+        {
+          "question": "¿Qué hace `EXPLAIN ANALYZE` en PostgreSQL?",
+          "options": [
+            "Muestra el plan de ejecución y tiempos reales",
+            "Ejecuta consulta sin mostrar datos",
+            "Optimiza índices",
+            "Elimina duplicados"
+          ],
+          "correct": 0,
+          "explanation": "EXPLAIN ANALYZE ejecuta la consulta y muestra estadísticas de tiempo y plan."
+        },
+        {
+          "question": "¿Para qué sirve `VACUUM` en PostgreSQL?",
+          "options": [
+            "Limpiar espacio muerto y actualizar estadísticas",
+            "Eliminar tabla",
+            "Crear índices",
+            "Reiniciar servidor"
+          ],
+          "correct": 0,
+          "explanation": "VACUUM recupera espacio de tuplas muertas y mantiene salud de la base de datos."
+        },
+        {
+          "question": "¿Cómo verificas la unicidad de una columna?",
+          "options": [
+            "CREATE UNIQUE INDEX",
+            "ALTER TABLE ADD INDEX",
+            "CREATE INDEX",
+            "ADD CONSTRAINT NONUNIQUE"
+          ],
+          "correct": 0,
+          "explanation": "UNIQUE INDEX o UNIQUE CONSTRAINT garantizan que no haya valores duplicados."
+        },
+        {
+          "question": "¿Qué hace `ANALYZE` en PostgreSQL?",
+          "options": [
+            "Recolectar estadísticas para el planificador",
+            "Eliminar índices",
+            "Vaciar tabla",
+            "Crear respaldo"
+          ],
+          "correct": 0,
+          "explanation": "ANALYZE recopila estadísticas de distribución de datos para optimizar planes."
+        },
+        {
+          "question": "¿Qué es un bind parameter en SQL?",
+          "options": [
+            "Marcador ? o :name que luego se sustituye",
+            "Variable local en procedimiento",
+            "Índice temporal",
+            "Comentario en SQL"
+          ],
+          "correct": 0,
+          "explanation": "Los bind parameters (?) previenen inyección y permiten reutilizar planes."
+        },
+        {
+          "question": "¿Qué hace `SHOW INDEXES FROM tabla` en MySQL?",
+          "options": [
+            "Lista índices definidos para la tabla",
+            "Elimina índices",
+            "Crea índices",
+            "Muestra consultas"
+          ],
+          "correct": 0,
+          "explanation": "SHOW INDEXES muestra nombre, columna y tipo de cada índice en la tabla."
+        },
+        {
+          "question": "¿Para qué sirve `db.serverStatus()` en MongoDB?",
+          "options": [
+            "Mostrar estadísticas generales del servidor",
+            "Eliminar datos",
+            "Actualizar índices",
+            "Reiniciar servidor"
+          ],
+          "correct": 0,
+          "explanation": "serverStatus() devuelve métricas de rendimiento y uso de recursos."
+        },
+        {
+          "question": "¿Qué comando inicia una sesión en Mongo Shell con autenticación?",
+          "options": [
+            "mongo --username user --password pass --authenticationDatabase admin",
+            "mongo auth user pass",
+            "mongo login",
+            "mongo connect auth"
+          ],
+          "correct": 0,
+          "explanation": "La línea de comandos con --username, --password y --authenticationDatabase inicia sesión autenticada."
+        },
+        {
+          "question": "¿Qué hace `db.getSiblingDB('otra')`?",
+          "options": [
+            "Permite cambiar a otra base de datos sin reconectar",
+            "Crear nueva base",
+            "Eliminar base",
+            "Mostrar bases existentes"
+          ],
+          "correct": 0,
+          "explanation": "getSiblingDB('nombre') retorna una referencia a esa base de datos en la misma conexión."
+        }
+  ]
