@@ -22,39 +22,6 @@
     "explanation": "AUC entre 0.80 y 0.90 indica buena habilidad para distinguir clases."
   },
   {
-    "question": "Al aplicar PCA se retienen dos componentes que explican 75% y 20% de varianza. ¿Es razonable reducir de 10 a 2 dimensiones?",
-    "options": [
-      "Sí, conserva 95% de la varianza",
-      "No, debería conservar al menos 99%",
-      "Sí, porque 2 componentes son suficientes",
-      "No, debería usar 10 componentes"
-    ],
-    "correct": 0,
-    "explanation": "Conservar 95% de varianza suele ser suficiente para muchos análisis reduciendo complejidad."
-  },
-  {
-    "question": "Un algoritmo K-Means con k=4 arroja silhouette score=0.15. ¿Qué indica este valor?",
-    "options": [
-      "Buena separación entre clusters",
-      "Clusters poco definidos",
-      "Overfitting de clusters",
-      "Número de clusters óptimo"
-    ],
-    "correct": 1,
-    "explanation": "Silhouette cercano a 0 indica que los puntos están entre clusters, no bien separados."
-  },
-  {
-    "question": "En DBSCAN, eps=0.5 y min_samples=5 deja 20% de puntos como ruido. ¿Cómo mejorarías la captura de clusters?",
-    "options": [
-      "Aumentar eps",
-      "Disminuir eps",
-      "Aumentar min_samples",
-      "Reducir el número de dimensiones"
-    ],
-    "correct": 0,
-    "explanation": "Aumentar eps permite incluir más vecinos, disminuyendo puntos marcados como ruido."
-  },
-  {
     "question": "Un modelo de regresión lineal obtiene MAPE=12% en ventas. ¿Es un error aceptable para forecasting?",
     "options": [
       "Sí, <15% es bueno en series económicas",
@@ -130,17 +97,6 @@
     ],
     "correct": 0,
     "explanation": "MAE es más interpretable y menos influido por errores extremos en temperatura."
-  },
-  {
-    "question": "Se analizan clusters con Silhouette=0.55. ¿Cómo valoras la calidad?",
-    "options": [
-      "Buena (>0.5)",
-      "Regular (0.25–0.5)",
-      "Mala (<0.25)",
-      "Aleatoria (0)"
-    ],
-    "correct": 0,
-    "explanation": "Silhouette >0.5 indica clusters bien separados y cohesivos."
   },
   {
     "question": "Generas un ROC curve y ves AUC=0.50. ¿Qué significa?",
@@ -242,17 +198,6 @@
     "explanation": "MAPE comunica error relativo (%), más fácil de entender para negocio."
   },
   {
-    "question": "En clustering jerárquico con dendrograma, ¿cómo decidirías número de clusters?",
-    "options": [
-      "Cortar dendrograma en mayor distancia vertical",
-      "Elegir k arbitrario",
-      "Usar silhouette en paralelo",
-      "Calcular AUC"
-    ],
-    "correct": 0,
-    "explanation": "Se corta dendrograma donde las distancias entre fusiones son mayores, separando clusters naturales."
-  },
-  {
     "question": "Comparas PR curve y ROC curve para clasificación desequilibrada. ¿Cuál priorizar?",
     "options": [
       "PR curve, enfatiza precisión y recall en minoría",
@@ -286,18 +231,7 @@
     "explanation": "Errores altos indican observaciones atípicas, útil en detección de anomalías."
   },
   {
-    "question": "Tras aplicar t-SNE, visualizas clusters pero no hay separación clara. ¿Qué podrías intentar?",
-    "options": [
-      "Ajustar perplexity y learning rate",
-      "Usar PCA sin reducción",
-      "Eliminar normalización",
-      "Subir dimensionalidad original"
-    ],
-    "correct": 0,
-    "explanation": "t-SNE es sensible a perplexity y learning rate; ajustarlos mejora la visualización."
-  },
-  {
-    "question": "Se obtiene un informe de regresión con R²=0.7. ¿Cómo interpretarías esto?",
+    "question": "En un informe de regresión, R²=0.70. ¿Cómo interpretarías esto?",
     "options": [
       "El modelo explica 70% de la varianza",
       "El error medio es 0.7",
@@ -308,7 +242,7 @@
     "explanation": "R² indica proporción de varianza de la variable respuesta explicada por el modelo."
   },
   {
-    "question": "Un modelo de texto obtiene BLEU score=0.3. ¿Es buen resultado en traducción automática?",
+    "question": "Un modelo de texto obtiene BLEU score=0.30. ¿Es buen resultado en traducción automática?",
     "options": [
       "Moderado; BLEU ~0.3–0.5 es aceptable",
       "Excelente; >0.9",
@@ -328,5 +262,82 @@
     ],
     "correct": 0,
     "explanation": "Top-5 accuracy amplía criterio de acierto considerando las 5 predicciones con mayor probabilidad."
+  },
+  {
+    "question": "¿Qué es la Inteligencia Artificial Estrecha (IA Débil)?",
+    "options": [
+      "Sistemas con consciencia propia",
+      "IA diseñada para tareas específicas sin adaptarse fuera de su dominio",
+      "IA capaz de igualar la inteligencia humana en todo aspecto",
+      "Máquinas que superan la inteligencia humana"
+    ],
+    "correct": 1,
+    "explanation": "La IA Débil ejecuta tareas concretas (reconocimiento facial, chatbots) sin capacidad general."
+  },
+  {
+    "question": "¿Qué describe mejor la Inteligencia Artificial General (IA Fuerte)?",
+    "options": [
+      "IA que opera bajo reglas fijas sin aprender",
+      "IA teórica capaz de entender y aprender cualquier tarea humana",
+      "IA destinada solo a clasificación de imágenes",
+      "IA especializada en optimización"
+    ],
+    "correct": 1,
+    "explanation": "La IA Fuerte es un concepto teórico de máquinas con inteligencia igual o superior a la humana en todos los ámbitos."
+  },
+  {
+    "question": "¿Qué es la superinteligencia en IA?",
+    "options": [
+      "IA que aprende de manera supervisada",
+      "IA con capacidades cognitivas que superan las humanas",
+      "IA especializada en Big Data",
+      "IA limitada a tareas específicas"
+    ],
+    "correct": 1,
+    "explanation": "Superinteligencia se refiere a máquinas con habilidades cognitivas por encima del mejor rendimiento humano."
+  },
+  {
+    "question": "¿Cuál es la principal diferencia entre Machine Learning y Deep Learning?",
+    "options": [
+      "ML requiere GPUs; DL no",
+      "DL aprende características automáticamente mediante redes neuronales profundas; ML usa algoritmos clásicos con extracción manual",
+      "ML siempre supera a DL",
+      "DL solo para datos estructurados"
+    ],
+    "correct": 1,
+    "explanation": "Deep Learning usa arquitecturas neuronales profundas para aprender representaciones jerárquicas sin ingeniería manual."
+  },
+  {
+    "question": "¿Qué se entiende por Análisis Exploratorio de Datos (EDA)?",
+    "options": [
+      "Entrenar un modelo predictivo",
+      "Fase de comprensión y visualización de datos antes de modelar",
+      "Paso de deploy en producción",
+      "Creación de reportes finales"
+    ],
+    "correct": 1,
+    "explanation": "EDA consiste en explorar distribuciones, tendencias, outliers y relaciones antes de aplicar algoritmos."
+  },
+  {
+    "question": "¿Cuál estadística mide la dispersión de los datos respecto a la media?",
+    "options": [
+      "Varianza",
+      "Media",
+      "Moda",
+      "Percentil"
+    ],
+    "correct": 0,
+    "explanation": "La varianza es el promedio de las diferencias al cuadrado respecto a la media."
+  },
+  {
+    "question": "¿Para qué sirve un diagrama de cajas y bigotes (boxplot)?",
+    "options": [
+      "Visualizar distribución de datos mediante cuartiles y outliers",
+      "Mostrar correlación entre dos variables",
+      "Representar series temporales",
+      "Dibujar árboles de decisión"
+    ],
+    "correct": 0,
+    "explanation": "El boxplot muestra mediana, cuartiles, rango intercuartílico y posibles valores atípicos."
   }
 ]
