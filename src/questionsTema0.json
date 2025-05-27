@@ -1,0 +1,321 @@
+[
+  {
+    "question": "¿Qué es la Inteligencia Artificial (IA)?",
+    "options": [
+      "El estudio y desarrollo de sistemas que realizan tareas que requieren inteligencia humana",
+      "Un sistema de bases de datos relacional",
+      "Un lenguaje de programación especializado",
+      "Una técnica de visualización de datos"
+    ],
+    "correct": 0,
+    "explanation": "La IA estudia y crea sistemas capaces de aprender, razonar y resolver problemas como un humano."
+  },
+  {
+    "question": "¿Cuál de los siguientes es un ejemplo de IA débil (narrow)?",
+    "options": [
+      "Siri o Alexa",
+      "Una IA con conciencia propia",
+      "Un robot humanoide con emociones",
+      "Un sistema de IA que supera al humano en todas las tareas"
+    ],
+    "correct": 0,
+    "explanation": "La IA débil está diseñada para tareas específicas como asistentes virtuales."
+  },
+  {
+    "question": "¿En qué se diferencia la IA general (strong) de la IA débil?",
+    "options": [
+      "La IA general iguala o supera la inteligencia humana en todos los ámbitos",
+      "La IA general solo ejecuta reglas predefinidas sin aprendizaje",
+      "La IA débil puede adaptarse a cualquier contexto",
+      "No hay diferencias, son sinónimos"
+    ],
+    "correct": 0,
+    "explanation": "La IA general se concibe capaz de razonar y aprender en cualquier dominio, a diferencia de la IA débil."
+  },
+  {
+    "question": "¿Qué concepto teórico introdujo Alan Turing en 1936 que fundamenta la IA?",
+    "options": [
+      "La máquina de Turing",
+      "Redes neuronales convolucionales",
+      "Algoritmos genéticos",
+      "Teoría de grafos"
+    ],
+    "correct": 0,
+    "explanation": "La máquina de Turing es un modelo abstracto que define cómo las máquinas pueden realizar cálculos."
+  },
+  {
+    "question": "¿Qué prueba propuso Alan Turing en 1950 para evaluar la inteligencia de una máquina?",
+    "options": [
+      "El Test de Turing",
+      "El Test de Voight-Kampff",
+      "El Test de Voight-Kanpur",
+      "El Test de Robinson"
+    ],
+    "correct": 0,
+    "explanation": "El Test de Turing mide si una máquina puede comunicarse indistintamente de un humano."
+  },
+  {
+    "question": "¿Cuál fue el hito histórico de 1956 en la IA?",
+    "options": [
+      "La Conferencia de Dartmouth",
+      "El lanzamiento de Deep Blue",
+      "La invención del perceptrón",
+      "El descubrimiento de la backpropagation"
+    ],
+    "correct": 0,
+    "explanation": "La Conferencia de Dartmouth fundó oficialmente el campo de la inteligencia artificial."
+  },
+  {
+    "question": "¿Quién acuñó el término “Inteligencia Artificial”?",
+    "options": [
+      "John McCarthy",
+      "Marvin Minsky",
+      "Alan Turing",
+      "Claude Shannon"
+    ],
+    "correct": 0,
+    "explanation": "John McCarthy propuso el término durante la Conferencia de Dartmouth en 1956."
+  },
+  {
+    "question": "¿Qué es el ‘invierno de la IA’?",
+    "options": [
+      "Período de desinterés y recortes de financiación en investigación de IA",
+      "Estación del año dedicada a competiciones de IA",
+      "Algoritmo de optimización",
+      "Nombre de un modelo de red neuronal"
+    ],
+    "correct": 0,
+    "explanation": "Se refiere a los periodos críticos de baja financiación y expectativas frustradas en IA."
+  },
+  {
+    "question": "¿Qué programa venció al campeón mundial de ajedrez Garry Kasparov en 1997?",
+    "options": [
+      "Deep Blue",
+      "Watson",
+      "AlphaGo",
+      "ELIZA"
+    ],
+    "correct": 0,
+    "explanation": "Deep Blue de IBM derrotó a Kasparov, marcando un hito en IA aplicada al ajedrez."
+  },
+  {
+    "question": "¿Qué fue ELIZA, desarrollada en 1966?",
+    "options": [
+      "Un programa de procesamiento de lenguaje natural basado en reglas",
+      "Un sistema de reconocimiento facial",
+      "Un robot físico para atención al cliente",
+      "Una red neuronal profunda"
+    ],
+    "correct": 0,
+    "explanation": "ELIZA simulaba conversación usando patrones y reglas simples de texto."
+  },
+  {
+    "question": "¿Qué caracteriza al Aprendizaje Supervisado (Supervised Learning)?",
+    "options": [
+      "Entrenamiento con datos etiquetados (entradas y salidas conocidas)",
+      "Aprendizaje sin etiquetas y sin supervisión",
+      "Método basado en agentes autónomos",
+      "Técnica de clustering jerárquico"
+    ],
+    "correct": 0,
+    "explanation": "Supervised Learning utiliza ejemplos con etiquetas para entrenar modelos predictivos."
+  },
+  {
+    "question": "¿Qué distingue al Aprendizaje No Supervisado (Unsupervised Learning)?",
+    "options": [
+      "Encuentra patrones en datos no etiquetados",
+      "Requiere feedback humano constante",
+      "Genera datos sintéticos",
+      "Es un subcampo de Big Data"
+    ],
+    "correct": 0,
+    "explanation": "Unsupervised Learning agrupa o reduce dimensiones sin etiquetas previas."
+  },
+  {
+    "question": "¿Qué es el Deep Learning?",
+    "options": [
+      "Subcampo de ML que utiliza redes neuronales profundas",
+      "Algoritmo de clustering basado en distancias",
+      "Técnica de regresión lineal",
+      "Sistema de bases NoSQL"
+    ],
+    "correct": 0,
+    "explanation": "Deep Learning emplea redes neuronales con múltiples capas para aprender representaciones jerárquicas."
+  },
+  {
+    "question": "¿Qué son las Redes Neuronales Artificiales (ANN)?",
+    "options": [
+      "Modelos inspirados en el cerebro formados por capas de neuronas artificiales",
+      "Bases de datos en memoria",
+      "Sistemas de ficheros distribuidos",
+      "Lenguajes de programación funcionales"
+    ],
+    "correct": 0,
+    "explanation": "Las ANN procesan información ajustando pesos entre nodos en capas."
+  },
+  {
+    "question": "¿Qué es la IA generativa?",
+    "options": [
+      "Modelos que crean contenido nuevo (texto, imágenes, música)",
+      "Sistemas expertos basados en reglas",
+      "Frameworks de desarrollo web",
+      "Técnicas de reducción de dimensionalidad"
+    ],
+    "correct": 0,
+    "explanation": "Generative AI produce contenido original aprendiendo distribuciones de datos."
+  },
+  {
+    "question": "¿Para qué sirve el Reconocimiento de Voz (Speech Recognition)?",
+    "options": [
+      "Convertir el habla en texto",
+      "Clasificar imágenes",
+      "Entrenar redes neuronales",
+      "Minimizar funciones de pérdida"
+    ],
+    "correct": 0,
+    "explanation": "Speech Recognition traduce señales de audio en texto procesable."
+  },
+  {
+    "question": "¿Qué función tiene el Procesamiento del Lenguaje Natural (NLP)?",
+    "options": [
+      "Permitir que las máquinas entiendan y generen lenguaje humano",
+      "Optimizar consultas SQL",
+      "Diseñar arquitecturas de datos",
+      "Ejecutar simulaciones físicas"
+    ],
+    "correct": 0,
+    "explanation": "NLP aborda comprensión y generación de lenguaje natural por parte de máquinas."
+  },
+  {
+    "question": "¿Qué aplica la Visión por Computadora (Computer Vision)?",
+    "options": [
+      "Interpretar y analizar información visual",
+      "Gestionar bases de datos relacionales",
+      "Automatizar escrituras legales",
+      "Monitorear redes blockchain"
+    ],
+    "correct": 0,
+    "explanation": "Computer Vision extrae y procesa características de imágenes y vídeo."
+  },
+  {
+    "question": "¿Qué es la Detección de Anomalías (Anomaly Detection)?",
+    "options": [
+      "Identificar patrones inusuales o desviaciones en los datos",
+      "Eliminar datos duplicados",
+      "Comprimir imágenes",
+      "Generar redes neuronales"
+    ],
+    "correct": 0,
+    "explanation": "Anomaly Detection busca comportamientos o valores atípicos en conjuntos de datos."
+  },
+  {
+    "question": "¿En qué consiste el Aprendizaje por Refuerzo (Reinforcement Learning)?",
+    "options": [
+      "Un agente aprende por ensayo/error maximizando recompensas",
+      "Modelado basado en reglas expertas",
+      "Clustering jerárquico de dimensiones",
+      "Regresión polinómica de alto orden"
+    ],
+    "correct": 0,
+    "explanation": "RL entrena agentes tomando acciones y recibiendo feedback de recompensas."
+  },
+  {
+    "question": "¿Qué papel tiene la Minería de Datos (Data Mining)?",
+    "options": [
+      "Extraer patrones y conocimiento útil de grandes volúmenes de datos",
+      "Visualizar datos en dashboards",
+      "Desplegar aplicaciones en la nube",
+      "Crear índices en bases de datos"
+    ],
+    "correct": 0,
+    "explanation": "Data Mining usa técnicas estadísticas y ML para descubrir información oculta."
+  },
+  {
+    "question": "¿Qué es un Agente en IA (Agentic AI)?",
+    "options": [
+      "Un sistema que toma decisiones y actúa autónomamente",
+      "Un nodo de red neuronal",
+      "Un tipo de gráfico en Matplotlib",
+      "Un componente de SQL"
+    ],
+    "correct": 0,
+    "explanation": "Los agentes perciben su entorno y toman acciones para lograr objetivos."
+  },
+  {
+    "question": "¿Qué arquitecturas sentó John von Neumann en computación?",
+    "options": [
+      "Arquitectura de programa almacenado (CPU, memoria, bus)",
+      "Arquitectura de microservicios",
+      "Arquitectura cliente-servidor",
+      "Arquitectura de grafos"
+    ],
+    "correct": 0,
+    "explanation": "La arquitectura de von Neumann define CPU, memoria y buses para ejecutar programas."
+  },
+  {
+    "question": "¿Qué implicación ética surge de la IA generativa?",
+    "options": [
+      "Posible desinformación y deepfakes",
+      "Mejora de índices de clustering",
+      "Reducción de dimensionalidad automática",
+      "Control de versiones en Git"
+    ],
+    "correct": 0,
+    "explanation": "Generative AI puede ser usada para falsificar audios, imágenes y texto."
+  },
+  {
+    "question": "¿Cuál es la diferencia entre IA débil y IA fuerte?",
+    "options": [
+      "La IA fuerte tiene capacidad de razonamiento general; la IA débil no",
+      "La IA débil es más costosa que la IA fuerte",
+      "La IA fuerte no requiere datos",
+      "No existe IA fuerte"
+    ],
+    "correct": 0,
+    "explanation": "La IA fuerte busca inteligencia general, mientras que la débil se enfoca en tareas específicas."
+  },
+  {
+    "question": "¿Qué avance marcó la era moderna de la IA (2000-presente)?",
+    "options": [
+      "Explosión de Deep Learning y Big Data",
+      "Invención del perceptrón",
+      "Conferencia de Dartmouth",
+      "Primer programa de ajedrez"
+    ],
+    "correct": 0,
+    "explanation": "La disponibilidad de datos masivos y mayor capacidad de cómputo impulsó redes profundas."
+  },
+  {
+    "question": "¿Qué es IBM Watson?",
+    "options": [
+      "Plataforma de IA cognitiva que ganó Jeopardy! en 2011",
+      "Un robot humanoide",
+      "Una librería de Python para ML",
+      "Un dataset de imágenes"
+    ],
+    "correct": 0,
+    "explanation": "Watson usa NLP y ML para analizar datos y responder preguntas complejas."
+  },
+  {
+    "question": "¿Qué modeló Frank Rosenblatt en 1958?",
+    "options": [
+      "El Perceptrón, una de las primeras redes neuronales",
+      "La arquitectura de von Neumann",
+      "El Test de Turing",
+      "El algoritmo de Adam"
+    ],
+    "correct": 0,
+    "explanation": "El perceptrón es un modelo de neurona artificial que sienta las bases de las ANN."
+  },
+  {
+    "question": "¿Qué caracteriza el enfoque multidisciplinar de la IA?",
+    "options": [
+      "Combina matemáticas, informática, filosofía y neurociencia",
+      "Solo usa estadística y gráficos",
+      "Solo se basa en hardware especializado",
+      "Es exclusivamente software libre"
+    ],
+    "correct": 0,
+    "explanation": "La IA integra conocimientos de varias disciplinas para comprender y replicar inteligencia."
+  }
+]

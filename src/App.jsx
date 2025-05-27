@@ -11,16 +11,16 @@ import questions1    from './questionsTema1.json';
 import questions2    from './questionsTema2.json';
 import questions3    from './questionsTema3.json';
 import questions4    from './questionsTema4.json';
-import questions5    from './questionsTema5.json';
+import questions0    from './questionsTema0.json';
 import questionsExam from './questionsExam.json';
 import questionsCode from './questionsCode.json';
 
 const temas = [
+  { id: 0, questions: questions0 },
   { id: 1, questions: questions1 },
   { id: 2, questions: questions2 },
   { id: 3, questions: questions3 },
   { id: 4, questions: questions4 },
-  { id: 5, questions: questions5 }
 ];
 
 export default function App() {
@@ -147,7 +147,7 @@ export default function App() {
         <p className="title">Pregunta {idx+1} / {total}</p>
         <p style={{
           fontSize:'2rem', lineHeight:1.4,
-          fontStyle:'italic', whiteSpace:'pre-wrap', wordBreak:'break-word'
+          fontStyle:'normal', whiteSpace:'pre-wrap', wordBreak:'break-word'
         }}>{q.question}</p>
       </section>
 
