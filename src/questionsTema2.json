@@ -2,21 +2,21 @@
   {
     "question": "¿Qué mide el Error Cuadrático Medio (MSE) en un modelo de regresión?",
     "options": [
-      "La media de los errores absolutos",
-      "La raíz cuadrada del error medio",
+      "La media de los errores absolutos sin elevar",
       "La media de los cuadrados de los residuos",
-      "El porcentaje de varianza explicada"
+      "La suma de desviaciones absolutas sobre el promedio",
+      "La magnitud cuadrática promedio de todos los errores"
     ],
-    "correct": 2,
+    "correct": 1,
     "explanation": "MSE = (1/N)·∑(yi−ŷi)²; promedia los cuadrados de las diferencias entre valores reales y predichos."
   },
   {
     "question": "¿En qué difiere el Error Absoluto Medio (MAE) respecto al MSE?",
     "options": [
-      "MAE penaliza más los errores grandes",
+      "MAE penaliza más los errores grandes sin elevar",
       "MAE usa diferencias absolutas en lugar de cuadrados",
-      "MAE es siempre mayor que el MSE",
-      "MAE requiere normalización previa"
+      "MAE promedia los valores absolutos de los errores",
+      "MAE enfatiza errores pequeños sobre errores grandes ocasionales"
     ],
     "correct": 1,
     "explanation": "MAE = (1/N)·∑|yi−ŷi|; promedia las magnitudes de los errores sin elevarlos al cuadrado."
@@ -24,10 +24,10 @@
   {
     "question": "¿Qué indica el coeficiente de determinación R²?",
     "options": [
-      "Proporción de varianza de la predicción sobre la real",
+      "Porcentaje de varianza total explicado por modelo",
       "Proporción de varianza explicada por el modelo",
-      "Error medio normalizado",
-      "Número de variables en el modelo"
+      "Media de diferencias entre valores y predicciones",
+      "Nivel de correlación entre variable y predicción"
     ],
     "correct": 1,
     "explanation": "R² = 1−(SSres/SStot); muestra qué fracción de la varianza de los datos explica el modelo."
@@ -35,10 +35,10 @@
   {
     "question": "¿Para qué sirve la estadística F en regresión?",
     "options": [
-      "Testear normalidad de residuos",
-      "Comparar varianza de errores",
+      "Detectar heterocedasticidad en los residuos",
+      "Medir dependencia serial en residuos",
       "Evaluar significancia global del modelo",
-      "Medir multicolinealidad"
+      "Analizar colinealidad entre variables predictoras"
     ],
     "correct": 2,
     "explanation": "F compara varianza explicada por el modelo frente a la no explicada; un F alto indica modelo significativo."
@@ -46,10 +46,10 @@
   {
     "question": "¿Qué informa el valor p asociado a un coeficiente β?",
     "options": [
-      "Magnitud del coeficiente",
+      "Magnitud del efecto estimado sobre la variable",
       "Probabilidad de observar el coeficiente bajo H₀",
-      "Varianza del coeficiente",
-      "Correlación con otras variables"
+      "Variabilidad del coeficiente bajo la hipótesis nula",
+      "Grado de asociación estadística entre variables explicativas"
     ],
     "correct": 1,
     "explanation": "El p–value mide qué tan probable es obtener ese β si en realidad efectividad fuese cero (hipótesis nula)."
@@ -59,8 +59,8 @@
     "options": [
       "Autocorrelación de residuos",
       "Distribución de residuos",
-      "Asimetría de residuos",
-      "Número de observaciones atípicas"
+      "Asimetría en residuos",
+      "Observaciones atípicas totales"
     ],
     "correct": 0,
     "explanation": "Durbin–Watson detecta correlación serial en residuos; un valor cercano a 2 indica independencia."
@@ -68,10 +68,10 @@
   {
     "question": "¿Cuál es el propósito de la prueba Jarque–Bera?",
     "options": [
-      "Evaluar heterocedasticidad",
+      "Evaluar heterocedasticidad de los residuos",
       "Testear normalidad de los residuos",
-      "Medir multicolinealidad",
-      "Examinar autocorrelación"
+      "Medir dependencia serial en regresión",
+      "Analizar asimetría y curtosis conjunta"
     ],
     "correct": 1,
     "explanation": "Jarque–Bera combina asimetría y curtosis de residuos para verificar si siguen una distribución normal."
@@ -81,8 +81,8 @@
     "options": [
       "Error de predicción en validación",
       "Comparación de modelos penalizando complejidad",
-      "Proporción de varianza explicada",
-      "Número óptimo de características"
+      "Proporción de varianza explicada global",
+      "Número óptimo de variables predictoras"
     ],
     "correct": 1,
     "explanation": "AIC = 2k−2·ln(L); equilibra bondad de ajuste (verosimilitud L) y número de parámetros k."
@@ -90,21 +90,21 @@
   {
     "question": "¿Qué mide la curtosis (kurtosis) de los residuos?",
     "options": [
-      "Asimetría de la distribución",
-      "Anchura de la campana normal",
+      "Grado de asimetría en la distribución estadística",
       "Peso de las colas de la distribución",
-      "Número de picos en la distribución"
+      "Anchura de la curva normal estándar distribución",
+      "Número de picos en la distribución observada"
     ],
-    "correct": 2,
+    "correct": 1,
     "explanation": "La curtosis evalúa si hay más valores extremos (colas pesadas) o menos (colas ligeras) que en una normal."
   },
   {
     "question": "¿Qué identifica la estadística Omnibus en regresión?",
     "options": [
-      "Linealidad del modelo",
+      "Evaluar linealidad del modelo",
       "Significancia individual de β",
       "Normalidad conjunta de residuos",
-      "Heterocedasticidad"
+      "Detectar heterocedasticidad en residuos"
     ],
     "correct": 2,
     "explanation": "El test Omnibus combina asimetría y curtosis para evaluar normalidad global de los residuos."
@@ -112,10 +112,10 @@
   {
     "question": "¿Cuál es la diferencia entre Label Encoding y One-Hot Encoding?",
     "options": [
-      "Label ruido; One-Hot normaliza valores",
+      "Label codifica categorías; One-Hot genera múltiples columnas",
       "Label asigna enteros; One-Hot crea columnas binarias",
-      "Ambos crean columnas binarias",
-      "Label disminuye dimensionalidad"
+      "Ambos métodos crean vectores de representación binaria",
+      "Label reduce dimensionalidad; One-Hot mantiene unicidad categorías"
     ],
     "correct": 1,
     "explanation": "LabelEncoder mapea categorías a enteros, One-Hot genera una columna por categoría evitando orden implícito."
@@ -123,10 +123,10 @@
   {
     "question": "¿Cuál es el objetivo de la regresión lineal múltiple?",
     "options": [
-      "Clasificar instancias en categorías",
+      "Clasificar instancias en categorías predefinidas basándose en etiquetas previamente",
       "Predecir una variable continua en función de varias independientes",
-      "Agrupar datos sin etiquetas",
-      "Reducir la dimensionalidad"
+      "Agrupar datos similares usando algoritmos sin etiquetas externas previas",
+      "Reducir dimensiones de datos manteniendo máxima información relevante estadística"
     ],
     "correct": 1,
     "explanation": "La regresión múltiple modela y estima un valor numérico basado en varias variables predictoras."
@@ -135,9 +135,9 @@
     "question": "¿Qué asunción exige homocedasticidad en regresión?",
     "options": [
       "Residuos con varianza constante",
-      "Residuos independientes",
-      "Residuos norm    ales",
-      "Variables sin multicolinealidad"
+      "Residuos independientes entre sí",
+      "Residuos con distribución normal",
+      "Predictores libres de multicolinealidad"
     ],
     "correct": 0,
     "explanation": "Homocedasticidad implica que la varianza de residuos es la misma para todos los niveles de predictores."
@@ -145,10 +145,10 @@
   {
     "question": "¿Por qué es importante la independencia de errores?",
     "options": [
-      "Evita overfitting",
+      "Evita sobreajuste en entrenamiento",
       "Permite inferencias estadísticas válidas",
       "Reduce dimensión de datos",
-      "Mejora rapidez de cálculo"
+      "Mejora velocidad de cálculo"
     ],
     "correct": 1,
     "explanation": "La autocorrelación en residuos viola supuestos, afectando validez de pruebas t y F."
@@ -159,7 +159,7 @@
       "Outliers en Y",
       "Colinealidad entre predictores",
       "Error de especificación",
-      "Insuficiente muestra"
+      "Insuficiente muestra disponible"
     ],
     "correct": 1,
     "explanation": "El número de condición evalúa sensibilidad de XᵀX; un valor alto señala multicolinealidad."
@@ -168,9 +168,9 @@
     "question": "¿Qué transformaciones permiten linealizar modelos exponenciales?",
     "options": [
       "Logaritmo en Y y/o X",
-      "Raíz cuadrada en Y",
-      "Elevar a potencia",
-      "Estandarización de variables"
+      "Raíz cuadrada en Y solamente",
+      "Elevar datos a potencia arbitraria",
+      "Normalizar variables mediante escala min-max"
     ],
     "correct": 0,
     "explanation": "ln(Y)=ln(a)+bX convierte relaciones exponenciales en forma lineal para aplicar regresión lineal."
@@ -178,10 +178,10 @@
   {
     "question": "¿Cuál es la ventaja de la regresión Ridge?",
     "options": [
-      "Elimina variables irrelevantes",
+      "Elimina variables irrelevantes del modelo predictivo",
       "Penaliza coeficientes grandes para reducir varianza",
-      "No requiere variables normalizadas",
-      "Maximiza varianza explicada sin penalización"
+      "No requiere estandarizar previamente las variables",
+      "Maximiza varianza explicada sin penalización alguna"
     ],
     "correct": 1,
     "explanation": "Ridge (L2) añade α·∑βj² al costo, evitando coeficientes extremos y mejorando generalización."
@@ -189,10 +189,10 @@
   {
     "question": "¿Qué característica distingue a Lasso frente a Ridge?",
     "options": [
-      "Lasso usa L1 penalización, creando sparsity",
+      "Lasso usa penalización L1 generando sparsity",
       "Lasso solo reduce coeficientes sin eliminarlos",
-      "Lasso no requiere α",
-      "Lasso es para clasificación"
+      "Lasso no requiere parámetro alfa definido",
+      "Lasso es exclusivo para problemas clasificación"
     ],
     "correct": 0,
     "explanation": "Lasso (L1) puede forzar algunos coeficientes a cero, realizando selección implícita de variables."
@@ -200,21 +200,21 @@
   {
     "question": "¿En qué caso usarías Elastic Net?",
     "options": [
-      "Cuando hay pocas variables",
-      "Cuando se desea combinar L1 y L2 para equilibrio entre sparsity y estabilidad",
-      "Para datos normalmente distribuidos",
-      "Solo para modelos no lineales"
+      "Cuando se desea combinar L1 y L2 para equilibrio entre sparsity y estabilidad estadística",
+      "Cuando existen fuertes multicolinealidades en variables predictoras y se necesita regularización implícita estadística",
+      "Para mejorar interpretabilidad de coeficientes sin eliminar totalmente variables en modelos lineales simples",
+      "Cuando se busca equilibrio entre bias y variance en algoritmos regulares estadísticos complejos"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "Elastic Net mezcla penalizaciones L1 y L2; útil si hay multicolinealidad y se desea selección de variables."
   },
   {
     "question": "¿Qué distingue la regresión logística binaria de la multiclase?",
     "options": [
       "Binaria predice dos clases; multiclase más de dos",
-      "Binaria usa MSE; multiclase usa MAE",
-      "No hay diferencia matemática",
-      "Multiclase no tiene sigmoide"
+      "Binaria utiliza MSE como métrica; multiclase usa MAE",
+      "No existe diferencia matemática significativa entre ellas ambas",
+      "Multiclase aplica función softmax en lugar de sigmoide"
     ],
     "correct": 0,
     "explanation": "La logística binaria modela P(y=1), la multinomial extiende a K categorías mutuamente excluyentes."
@@ -222,10 +222,10 @@
   {
     "question": "¿Cuál es el propósito de la función sigmoide en regresión logística?",
     "options": [
-      "Generar un valor continuo no acotado",
+      "Generar un valor continuo no acotado sin límite interpretativo posible",
       "Transformar la combinación lineal en una probabilidad entre 0 y 1",
-      "Linealizar relaciones no lineales",
-      "Reducir dimensionalidad"
+      "Linealizar relaciones no lineales curvas para análisis y visualización efectiva adicional",
+      "Reducir dimensionalidad conservando información significativa para análisis predictivo estadístico robusto complejo"
     ],
     "correct": 1,
     "explanation": "σ(z)=1/(1+e⁻ᶻ) convierte la salida lineal en un valor acotado [0,1] interpretable como probabilidad."
@@ -233,10 +233,10 @@
   {
     "question": "¿Qué métrica es común para evaluar regresores basados en árboles?",
     "options": [
-      "AUC-ROC",
+      "AUC-ROC y PR-AUC sobre datos binarios",
       "MSE o MAE sobre datos de prueba",
-      "Recall",
-      "Silhouette score"
+      "Recall y F1-score sobre datos de validación",
+      "Silhouette score usado en clustering unsupervised analysis"
     ],
     "correct": 1,
     "explanation": "Para regresión se usan MSE, MAE o R² en conjunto de validación."
@@ -244,10 +244,10 @@
   {
     "question": "¿Qué ventaja principal tiene Random Forest en regresión?",
     "options": [
-      "Entrenamiento extremadamente rápido",
+      "Entrenamiento muy rápido con gran paralelización interna automática",
       "Mejora estabilidad y reduce varianza promediando muchos árboles",
-      "Elimina colinealidad automáticamente",
-      "Garantiza interpretabilidad total"
+      "Elimina totalmente colinealidad en predictores de forma implícita",
+      "Garantiza interpretabilidad completa de cada árbol usado internamente"
     ],
     "correct": 1,
     "explanation": "Forest promedia predicciones de múltiples árboles entrenados en subconjuntos aleatorios, reduciendo overfitting."
@@ -255,10 +255,10 @@
   {
     "question": "¿Para qué sirve el parámetro learning_rate en Gradient Boosting?",
     "options": [
-      "Determinar profundidad máxima del árbol",
+      "Determinar máxima profundidad permitida para cada árbol individual entrenado",
       "Controlar cuánto corrige cada nuevo árbol el error residual",
-      "Número de muestras mínimo por hoja",
-      "Número de árboles a entrenar"
+      "Número mínimo de muestras requeridas en cada hoja terminal",
+      "Cantidad exacta de árboles a entrenar en el modelo"
     ],
     "correct": 1,
     "explanation": "learning_rate escala la contribución de cada árbol en el ensemble para evitar ajustes demasiado agresivos."
@@ -267,9 +267,9 @@
     "question": "¿Qué describe la curva de aprendizaje (learning curve)?",
     "options": [
       "Evolución del error de entrenamiento y validación según tamaño de datos",
-      "Cambio de hiperparámetros",
-      "Variación del AIC con α",
-      "Distribución de residuos"
+      "Cambio de múltiples hiperparámetros y su efecto en error predictivo modelado",
+      "Variación del criterio de información Akaike AIC según alpha paramétrico modelístico",
+      "Distribución de residuos de entrenamiento y validación en gráfica comparativa estadística"
     ],
     "correct": 0,
     "explanation": "Las learning curves muestran cómo se reduce error en entrenamiento y validación al aumentar datos o complejidad."
@@ -277,18 +277,18 @@
   {
     "question": "¿Por qué se realiza la validación cruzada k-fold?",
     "options": [
-      "Para usar todo el dataset solo como entrenamiento",
       "Para estimar rendimiento estable usando k particiones",
-      "Para aumentar el tamaño del conjunto de prueba",
-      "Para normalizar variables"
+      "Para usar todo el dataset como entrenamiento",
+      "Para aumentar el tamaño conjunto de prueba",
+      "Para normalizar variables antes del modelado estadístico"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "Cross-validation divide datos en k bloques, entrenando k veces con distintos folds para evaluar robustez del modelo."
   },
   {
     "question": "¿Qué indica un alto sesgo (bias) en el bias-variance tradeoff?",
     "options": [
-      "Modelo muy complejo",
+      "Modelo muy complejo (overfitting)",
       "Modelo demasiado simple (underfitting)",
       "Modelo con muchos datos",
       "Modelo con alta varianza"
@@ -299,21 +299,21 @@
   {
     "question": "¿Qué indica una alta varianza en el bias-variance tradeoff?",
     "options": [
-      "Underfitting",
       "Overfitting",
-      "Normalidad de residuos",
-      "Heterocedasticidad"
+      "Underfitting",
+      "Heterocedasticidad",
+      "Multicolinealidad"
     ],
-    "correct": 1,
+    "correct": 0,
     "explanation": "Alta varianza significa que el modelo se ajusta demasiado al ruido de entrenamiento y no generaliza bien."
   },
   {
     "question": "¿Cuál es el objetivo final al ajustar hiperparámetros?",
     "options": [
-      "Maximizar el ajuste al conjunto de entrenamiento",
-      "Minimizar errores de entrenamiento",
+      "Maximizar el ajuste al conjunto completo de entrenamiento inicial primario",
+      "Minimizar todos los errores registrados en entrenamiento inicial primario",
       "Encontrar equilibrio que maximice rendimiento en datos no vistos",
-      "Eliminar variables del modelo"
+      "Eliminar todas las variables irrelevantes del modelo final estadístico"
     ],
     "correct": 2,
     "explanation": "La optimización de hiperparámetros busca mejorar la generalización, no solo el desempeño en entrenamiento."
