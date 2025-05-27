@@ -317,5 +317,115 @@
     ],
     "correct": 2,
     "explanation": "La optimización de hiperparámetros busca mejorar la generalización, no solo el desempeño en entrenamiento."
+  },
+  {
+    "question": "¿Qué indica un R-squared de 0.141 en este modelo de regresión?",
+    "options": [
+      "El modelo explica solo el 14.1 % de la varianza",
+      "El modelo explica el 85.9 % de la varianza restante",
+      "El modelo tiene un ajuste casi perfecto",
+      "El modelo no puede interpretarse con este valor"
+    ],
+    "correct": 0,
+    "explanation": "Un R-squared de 0.141 significa que sólo el 14.1 % de la variabilidad en Weekly_Sales está explicado por las variables del modelo, indicando un ajuste débil."
+  },
+  {
+    "question": "¿Por qué el Adjusted R-squared (0.140) es ligeramente menor que el R-squared (0.141)?",
+    "options": [
+      "Porque penaliza el número de variables incluidas",
+      "Porque ignora el número de observaciones totales",
+      "Porque corrige automáticamente la varianza residual",
+      "Porque aumenta con cada variable añadida"
+    ],
+    "correct": 0,
+    "explanation": "El Adjusted R-squared penaliza la inclusión de variables adicionales que no mejoran significativamente el ajuste, por eso suele ser algo menor que el R-squared."
+  },
+  {
+    "question": "¿Cómo interpretas un Prob (F-statistic) de 3.87e-64?",
+    "options": [
+      "Que al menos una variable del modelo es significativa",
+      "Que ninguna variable del modelo es significativa",
+      "Que el modelo está sobrefit por completo",
+      "Que los residuos no siguen una distribución normal"
+    ],
+    "correct": 0,
+    "explanation": "Un p-valor tan bajo indica que podemos rechazar la hipótesis nula de que todos los coeficientes son cero, por lo que al menos una variable explicativa es significativa."
+  },
+  {
+    "question": "¿Qué te sugiere un Durbin–Watson cercano a 2 (1.996)?",
+    "options": [
+      "Que no hay autocorrelación serial en los residuos",
+      "Que existe fuerte autocorrelación positiva en residuos",
+      "Que existe fuerte autocorrelación negativa en residuos",
+      "Que los residuos no son homocedásticos"
+    ],
+    "correct": 0,
+    "explanation": "Un Durbin–Watson próximo a 2 indica que los residuos no presentan autocorrelación serial significativa, condición deseable en regresión."
+  },
+  {
+    "question": "¿Qué indica un p-valor de coeficiente para Store (0.000)?",
+    "options": [
+      "Que el efecto de Store es estadísticamente significativo",
+      "Que el efecto de Store no es significativo",
+      "Que Store tiene multicolinealidad severa",
+      "Que Store debe eliminarse del modelo"
+    ],
+    "correct": 0,
+    "explanation": "Un p-valor de cero (aproximado) significa que el coeficiente de Store difiere significativamente de cero, por lo que tiene un efecto válido en la predicción."
+  },
+  {
+    "question": "¿Cómo evalúas un coeficiente negativo para Temperature (−857.3815)?",
+    "options": [
+      "Que a mayores temperaturas, Weekly_Sales disminuyen",
+      "Que la temperatura no influye en Weekly_Sales",
+      "Que la variable debe invertirse para interpretar",
+      "Que hay multicolinealidad con CPI"
+    ],
+    "correct": 0,
+    "explanation": "Un coeficiente negativo indica que, ceteris paribus, un aumento en la temperatura está asociado con una disminución en las ventas semanales."
+  },
+  {
+    "question": "¿Qué sugiere un AIC de 1.502e+05 al comparar dos modelos?",
+    "options": [
+      "Que el modelo con menor AIC es preferible",
+      "Que siempre el modelo original es mejor",
+      "Que los modelos tienen igual ajuste",
+      "Que AIC no sirve para comparar modelos"
+    ],
+    "correct": 0,
+    "explanation": "El AIC penaliza la complejidad y premia el ajuste; al comparar modelos, se elige el que tenga el AIC más bajo."
+  },
+  {
+    "question": "¿Qué concluyes si el Jarque-Bera p-valor es prácticamente cero?",
+    "options": [
+      "Que los residuos no siguen una distribución normal",
+      "Que los residuos se distribuyen normalmente",
+      "Que hay heterocedasticidad marcada",
+      "Que falta ajustar más variables"
+    ],
+    "correct": 0,
+    "explanation": "Un p-valor muy bajo en la prueba Jarque-Bera indica rechazo de la normalidad de los residuos, lo cual puede invalidar inferencias basadas en errores normales."
+  },
+  {
+    "question": "¿Qué indica un Cond. No. de 9.05e+10 en la regresión?",
+    "options": [
+      "Posible multicolinealidad severa entre variables",
+      "Que no hay multicolinealidad alguna",
+      "Que el modelo tiene bajo sesgo",
+      "Que el modelo está bien especificado"
+    ],
+    "correct": 0,
+    "explanation": "Un número de condición muy elevado sugiere multicolinealidad grave, lo que puede inestabilizar las estimaciones de los coeficientes."
+  },
+  {
+    "question": "¿Cómo valoras un F-statistic de 120.3 en este contexto?",
+    "options": [
+      "Muy alto, refuerza la significación conjunta del modelo",
+      "Muy bajo, sugiere modelo no significativo",
+      "Indica heterocedasticidad en residuos",
+      "Indica colinealidad perfecta"
+    ],
+    "correct": 0,
+    "explanation": "Un F-statistic elevado y su p-valor asociado muy bajo indican que todas las variables explicativas, en conjunto, aportan significativamente al ajuste."
   }
 ]
