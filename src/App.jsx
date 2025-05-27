@@ -176,7 +176,7 @@ export default function App() {
               onClick={() => startTopic(t.id)}
             >{t.id}</button>
           ))}
-          <button className="nes-btn is-error is-large custom-big-btn" onClick={startAll}>todo</button>
+          <button className="nes-btn is-error is-large custom-big-btn1" onClick={startAll}>todo</button>
           <button className="nes-btn is-dark is-large custom-big-btn1" onClick={startCode}>code</button>
           <button className="nes-btn is-warning is-large custom-big-btn1" onClick={startExam}>exam</button>
         </div>
