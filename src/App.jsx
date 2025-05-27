@@ -48,8 +48,8 @@ export default function App() {
   // audio setup
   const clickAudio  = useRef(new Audio(clickSfx));
   const finishAudio = useRef(new Audio(finishSfx));
-  clickAudio.current.volume  = 0.5;
-  finishAudio.current.volume = 0.7;
+  clickAudio.current.volume  = 0.8;
+  finishAudio.current.volume = 0.9;
   const playClick  = () => { clickAudio.current.currentTime = 0;  clickAudio.current.play().catch(()=>{}); };
   const playFinish = () => { finishAudio.current.currentTime = 0; finishAudio.current.play().catch(()=>{}); };
 
