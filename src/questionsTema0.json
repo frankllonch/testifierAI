@@ -1,321 +1,322 @@
 [
   {
-    "question": "¿Qué es la Inteligencia Artificial (IA)?",
+    "question": "¿Qué caracteriza a la Inteligencia Artificial Estrecha (IA Débil)?",
     "options": [
-      "El estudio y desarrollo de sistemas que realizan tareas que requieren inteligencia humana",
-      "Un sistema de bases de datos relacional",
-      "Un lenguaje de programación especializado",
-      "Una técnica de visualización de datos"
+      "Está diseñada para tareas específicas sin adaptarse a otras",
+      "Posee conciencia y razonamiento generalizado",
+      "Supera la inteligencia humana en todos los campos",
+      "Aprende automáticamente cualquier tarea sin datos"
     ],
     "correct": 0,
-    "explanation": "La IA estudia y crea sistemas capaces de aprender, razonar y resolver problemas como un humano."
+    "explanation": "La IA Débil está optimizada para funciones puntuales y no puede generalizar fuera de su dominio."
   },
   {
-    "question": "¿Cuál de los siguientes es un ejemplo de IA débil (narrow)?",
+    "question": "¿Qué describe mejor la Inteligencia Artificial General (IA Fuerte)?",
     "options": [
-      "Siri o Alexa",
-      "Una IA con conciencia propia",
-      "Un robot humanoide con emociones",
-      "Un sistema de IA que supera al humano en todas las tareas"
+      "Capaz de entender y aprender cualquier tarea humana",
+      "Optimizada para reconocimiento de voz exclusivamente",
+      "Solo aplicada a sistemas expertos en finanzas",
+      "Funciona sin necesidad de datos de entrenamiento"
     ],
     "correct": 0,
-    "explanation": "La IA débil está diseñada para tareas específicas como asistentes virtuales."
+    "explanation": "La IA Fuerte es teórica y engloba la capacidad de razonar y aprender en múltiples dominios."
   },
   {
-    "question": "¿En qué se diferencia la IA general (strong) de la IA débil?",
+    "question": "¿Qué es la Superinteligencia en IA?",
     "options": [
-      "La IA general iguala o supera la inteligencia humana en todos los ámbitos",
-      "La IA general solo ejecuta reglas predefinidas sin aprendizaje",
-      "La IA débil puede adaptarse a cualquier contexto",
-      "No hay diferencias, son sinónimos"
+      "Máquinas con capacidades cognitivas superiores a las humanas",
+      "Modelos supervisados con bajo error de predicción",
+      "Redes neuronales multicapa con regularización L2",
+      "Agentes que ejecutan tareas sin retroalimentación"
     ],
     "correct": 0,
-    "explanation": "La IA general se concibe capaz de razonar y aprender en cualquier dominio, a diferencia de la IA débil."
+    "explanation": "La Superinteligencia supera en rendimiento cognitivo al mejor ser humano en cada área."
   },
   {
-    "question": "¿Qué concepto teórico introdujo Alan Turing en 1936 que fundamenta la IA?",
+    "question": "¿Cuál es la función principal de la IA Generativa?",
     "options": [
-      "La máquina de Turing",
-      "Redes neuronales convolucionales",
-      "Algoritmos genéticos",
-      "Teoría de grafos"
+      "Crear contenido nuevo parecido al entrenado",
+      "Clasificar imágenes en categorías predefinidas",
+      "Optimizar parámetros de modelos supervisados",
+      "Detectar anomalías en series de tiempo"
     ],
     "correct": 0,
-    "explanation": "La máquina de Turing es un modelo abstracto que define cómo las máquinas pueden realizar cálculos."
+    "explanation": "La IA Generativa genera texto, imágenes, audio u otros datos que imitan su entrenamiento."
   },
   {
-    "question": "¿Qué prueba propuso Alan Turing en 1950 para evaluar la inteligencia de una máquina?",
+    "question": "¿Qué define a un sistema de IA Agente (Agentic AI)?",
     "options": [
-      "El Test de Turing",
-      "El Test de Voight-Kampff",
-      "El Test de Voight-Kanpur",
-      "El Test de Robinson"
+      "Toma decisiones y actúa autónomamente en un entorno",
+      "Solo responde a consultas de lenguaje natural",
+      "Entrena modelos sin supervisión humana",
+      "Clasifica datos usando redes neuronales simples"
     ],
     "correct": 0,
-    "explanation": "El Test de Turing mide si una máquina puede comunicarse indistintamente de un humano."
+    "explanation": "Un IA Agente interactúa y ejecuta acciones para maximizar recompensas en su entorno."
   },
   {
-    "question": "¿Cuál fue el hito histórico de 1956 en la IA?",
+    "question": "¿En qué consiste la Minería de Datos (Data Mining)?",
     "options": [
-      "La Conferencia de Dartmouth",
-      "El lanzamiento de Deep Blue",
-      "La invención del perceptrón",
-      "El descubrimiento de la backpropagation"
+      "Extraer patrones útiles de grandes conjuntos de datos",
+      "Diseñar arquitecturas de servidores en la nube",
+      "Realizar gráficos interactivos de visualización",
+      "Implementar redes neuronales profundas desde cero"
     ],
     "correct": 0,
-    "explanation": "La Conferencia de Dartmouth fundó oficialmente el campo de la inteligencia artificial."
+    "explanation": "La Minería de Datos utiliza técnicas estadísticas y de ML para descubrir conocimiento."
   },
   {
-    "question": "¿Quién acuñó el término “Inteligencia Artificial”?",
+    "question": "¿Qué es una Red Neuronal Artificial (ANN)?",
     "options": [
-      "John McCarthy",
-      "Marvin Minsky",
-      "Alan Turing",
-      "Claude Shannon"
+      "Modelo multicapa que ajusta pesos con funciones de activación",
+      "Algoritmo de búsqueda de rutas en grafos",
+      "Base de datos optimizada para series temporales",
+      "Método heurístico para clustering jerárquico"
     ],
     "correct": 0,
-    "explanation": "John McCarthy propuso el término durante la Conferencia de Dartmouth en 1956."
+    "explanation": "Las ANN imitan neuronas conectadas que procesan información mediante pesos y activaciones."
   },
   {
-    "question": "¿Qué es el ‘invierno de la IA’?",
+    "question": "¿Qué módulo de IA traduce voz a texto? ",
     "options": [
-      "Período de desinterés y recortes de financiación en investigación de IA",
-      "Estación del año dedicada a competiciones de IA",
-      "Algoritmo de optimización",
-      "Nombre de un modelo de red neuronal"
+      "Speech Recognition",
+      "Computer Vision",
+      "Data Mining",
+      "Reinforcement Learning"
     ],
     "correct": 0,
-    "explanation": "Se refiere a los periodos críticos de baja financiación y expectativas frustradas en IA."
+    "explanation": "Speech Recognition convierte señales de audio habladas en texto legible."
   },
   {
-    "question": "¿Qué programa venció al campeón mundial de ajedrez Garry Kasparov en 1997?",
+    "question": "¿Qué cubre el Procesamiento de Lenguaje Natural (NLP)?",
     "options": [
-      "Deep Blue",
-      "Watson",
-      "AlphaGo",
-      "ELIZA"
+      "Comprensión y generación de lenguaje humano",
+      "Clasificación de imágenes médicas",
+      "Simulación numérica de procesos físicos",
+      "Optimización de hiperparámetros"
     ],
     "correct": 0,
-    "explanation": "Deep Blue de IBM derrotó a Kasparov, marcando un hito en IA aplicada al ajedrez."
+    "explanation": "NLP permite a las máquinas interpretar, procesar y generar texto o voz humana."
   },
   {
-    "question": "¿Qué fue ELIZA, desarrollada en 1966?",
+    "question": "¿Cuál es el objetivo de la Visión por Computadora? ",
     "options": [
-      "Un programa de procesamiento de lenguaje natural basado en reglas",
-      "Un sistema de reconocimiento facial",
-      "Un robot físico para atención al cliente",
-      "Una red neuronal profunda"
+      "Interpretar y analizar información visual del entorno",
+      "Predecir el comportamiento de agentes autónomos",
+      "Desarrollar modelos de series temporales",
+      "Ajustar pesos en redes neuronales recurrentes"
     ],
     "correct": 0,
-    "explanation": "ELIZA simulaba conversación usando patrones y reglas simples de texto."
+    "explanation": "Computer Vision extrae características y patrones de imágenes y video."
   },
   {
-    "question": "¿Qué caracteriza al Aprendizaje Supervisado (Supervised Learning)?",
+    "question": "¿Para qué sirve la detección de anomalías? ",
     "options": [
-      "Entrenamiento con datos etiquetados (entradas y salidas conocidas)",
-      "Aprendizaje sin etiquetas y sin supervisión",
-      "Método basado en agentes autónomos",
-      "Técnica de clustering jerárquico"
+      "Identificar patrones inusuales o desviaciones esperadas",
+      "Aumentar la tasa de aprendizaje en modelos supervisados",
+      "Reducir la dimensionalidad con PCA",
+      "Generar nuevas muestras sintéticas"
     ],
     "correct": 0,
-    "explanation": "Supervised Learning utiliza ejemplos con etiquetas para entrenar modelos predictivos."
+    "explanation": "Anomaly Detection alerta sobre comportamientos o valores que difieren de lo normal."
   },
   {
-    "question": "¿Qué distingue al Aprendizaje No Supervisado (Unsupervised Learning)?",
+    "question": "¿En qué consiste el Aprendizaje por Refuerzo? ",
     "options": [
-      "Encuentra patrones en datos no etiquetados",
-      "Requiere feedback humano constante",
-      "Genera datos sintéticos",
-      "Es un subcampo de Big Data"
+      "Agente aprende mediante ensayo y error maximizando recompensas",
+      "Método de reducción de ruido en datos",
+      "Técnica de clustering para datos no etiquetados",
+      "Algoritmo de optimización de funciones convexas"
     ],
     "correct": 0,
-    "explanation": "Unsupervised Learning agrupa o reduce dimensiones sin etiquetas previas."
+    "explanation": "Reinforcement Learning entrena agentes basándose en recompensas y penalizaciones."
   },
   {
-    "question": "¿Qué es el Deep Learning?",
+    "question": "¿Qué es el Aprendizaje Supervisado? ",
     "options": [
-      "Subcampo de ML que utiliza redes neuronales profundas",
-      "Algoritmo de clustering basado en distancias",
-      "Técnica de regresión lineal",
-      "Sistema de bases NoSQL"
+      "Entrenar con datos etiquetados para predecir salidas futuras",
+      "Encontrar patrones en datos sin etiquetas",
+      "Reducir características irrelevantes automáticamente",
+      "Simular entornos de toma de decisiones"
     ],
     "correct": 0,
-    "explanation": "Deep Learning emplea redes neuronales con múltiples capas para aprender representaciones jerárquicas."
+    "explanation": "Supervised Learning usa pares entrada-salida conocidos para modelar predicciones."
   },
   {
-    "question": "¿Qué son las Redes Neuronales Artificiales (ANN)?",
+    "question": "¿Qué define el Aprendizaje No Supervisado? ",
     "options": [
-      "Modelos inspirados en el cerebro formados por capas de neuronas artificiales",
-      "Bases de datos en memoria",
-      "Sistemas de ficheros distribuidos",
-      "Lenguajes de programación funcionales"
+      "Descubrir estructuras y patrones en datos no etiquetados",
+      "Maximizar recompensas en entornos dinámicos",
+      "Entrenar modelos con etiquetas definidas por el usuario",
+      "Realizar pruebas A/B en pipelines de datos"
     ],
     "correct": 0,
-    "explanation": "Las ANN procesan información ajustando pesos entre nodos en capas."
+    "explanation": "Unsupervised Learning agrupa o reduce dimensionalidad sin etiquetas previas."
   },
   {
-    "question": "¿Qué es la IA generativa?",
+    "question": "¿Qué describe mejor la diferencia entre ML y DL? ",
     "options": [
-      "Modelos que crean contenido nuevo (texto, imágenes, música)",
-      "Sistemas expertos basados en reglas",
-      "Frameworks de desarrollo web",
-      "Técnicas de reducción de dimensionalidad"
+      "DL aprende automáticamente características; ML requiere extracción manual",
+      "ML siempre usa GPUs y DL no necesita cómputo especializado",
+      "DL es más interpretable que ML clásico",
+      "ML solo sirve para clasificación multicapa"
     ],
     "correct": 0,
-    "explanation": "Generative AI produce contenido original aprendiendo distribuciones de datos."
+    "explanation": "Deep Learning automatiza la extracción de features usando redes profundas."
   },
   {
-    "question": "¿Para qué sirve el Reconocimiento de Voz (Speech Recognition)?",
+    "question": "¿Cómo afecta el volumen de datos al ML vs DL? ",
     "options": [
-      "Convertir el habla en texto",
-      "Clasificar imágenes",
-      "Entrenar redes neuronales",
-      "Minimizar funciones de pérdida"
+      "DL requiere grandes volúmenes; ML funciona con datos moderados",
+      "ML necesita más datos que DL",
+      "DL no mejora con más datos",
+      "ML no puede entrenar con datos pequeños"
     ],
     "correct": 0,
-    "explanation": "Speech Recognition traduce señales de audio en texto procesable."
+    "explanation": "Las redes profundas rinden mejor con grandes cantidades de datos; ML clásico menos."
   },
   {
-    "question": "¿Qué función tiene el Procesamiento del Lenguaje Natural (NLP)?",
+    "question": "¿Qué optimización utiliza el Momentum? ",
     "options": [
-      "Permitir que las máquinas entiendan y generen lenguaje humano",
-      "Optimizar consultas SQL",
-      "Diseñar arquitecturas de datos",
-      "Ejecutar simulaciones físicas"
+      "Acumula gradientes pasados para suavizar la convergencia",
+      "Usa Hessiana completa en cada paso",
+      "Genera muestras sintéticas en minorías",
+      "Divide el batch en subgrupos aleatorios"
     ],
     "correct": 0,
-    "explanation": "NLP aborda comprensión y generación de lenguaje natural por parte de máquinas."
+    "explanation": "Momentum guarda una fracción del gradiente previo para acelerar convergencia."
   },
   {
-    "question": "¿Qué aplica la Visión por Computadora (Computer Vision)?",
+    "question": "¿En qué consiste el algoritmo Adam? ",
     "options": [
-      "Interpretar y analizar información visual",
-      "Gestionar bases de datos relacionales",
-      "Automatizar escrituras legales",
-      "Monitorear redes blockchain"
+      "Combina momentos de primer y segundo orden del gradiente",
+      "Calcula la matriz Hessiana exacta",
+      "Explora aleatoriamente combinaciones de hiperparámetros",
+      "Usa sólo el gradiente instantáneo sin memoria"
     ],
     "correct": 0,
-    "explanation": "Computer Vision extrae y procesa características de imágenes y vídeo."
+    "explanation": "Adam ajusta dinámicamente la tasa de aprendizaje usando medias móviles de gradientes."
   },
   {
-    "question": "¿Qué es la Detección de Anomalías (Anomaly Detection)?",
+    "question": "¿Cuál es la función de la tasa de aprendizaje (learning rate)? ",
     "options": [
-      "Identificar patrones inusuales o desviaciones en los datos",
-      "Eliminar datos duplicados",
-      "Comprimir imágenes",
-      "Generar redes neuronales"
+      "Controla el tamaño del paso en la dirección del gradiente",
+      "Determina el número de capas en la red",
+      "Fija la cantidad de datos a muestrear",
+      "Ajusta automáticamente el batch size"
     ],
     "correct": 0,
-    "explanation": "Anomaly Detection busca comportamientos o valores atípicos en conjuntos de datos."
+    "explanation": "El learning rate define cuánto se actualizan los parámetros en cada iteración."
   },
   {
-    "question": "¿En qué consiste el Aprendizaje por Refuerzo (Reinforcement Learning)?",
+    "question": "¿Qué técnica busca sistemáticamente hiperparámetros en un espacio definido? ",
     "options": [
-      "Un agente aprende por ensayo/error maximizando recompensas",
-      "Modelado basado en reglas expertas",
-      "Clustering jerárquico de dimensiones",
-      "Regresión polinómica de alto orden"
+      "Grid Search",
+      "K-means clustering",
+      "PCA incremental",
+      "Reinforcement Learning"
     ],
     "correct": 0,
-    "explanation": "RL entrena agentes tomando acciones y recibiendo feedback de recompensas."
+    "explanation": "Grid Search evalúa exhaustivamente todas las combinaciones de parámetros predefinidas."
   },
   {
-    "question": "¿Qué papel tiene la Minería de Datos (Data Mining)?",
+    "question": "¿Cómo funciona Random Search en hiperparámetros? ",
     "options": [
-      "Extraer patrones y conocimiento útil de grandes volúmenes de datos",
-      "Visualizar datos en dashboards",
-      "Desplegar aplicaciones en la nube",
-      "Crear índices en bases de datos"
+      "Selecciona combinaciones aleatorias dentro del espacio de búsqueda",
+      "Encuentra óptimos usando derivadas segunda orden",
+      "Genera datos sintéticos para minorías",
+      "Entrena redes neuronales sin supervisión"
     ],
     "correct": 0,
-    "explanation": "Data Mining usa técnicas estadísticas y ML para descubrir información oculta."
+    "explanation": "Random Search explora el espacio de parámetros probando muestras aleatorias."
   },
   {
-    "question": "¿Qué es un Agente en IA (Agentic AI)?",
+    "question": "¿Qué ofrece la optimización bayesiana ? ",
     "options": [
-      "Un sistema que toma decisiones y actúa autónomamente",
-      "Un nodo de red neuronal",
-      "Un tipo de gráfico en Matplotlib",
-      "Un componente de SQL"
+      "Modela la función objetivo para priorizar evaluaciones prometedoras",
+      "Usa gradientes estocásticos en cada epoch",
+      "Normaliza datos con MinMaxScaler",
+      "Aumenta el número de neuronas automáticamente"
     ],
     "correct": 0,
-    "explanation": "Los agentes perciben su entorno y toman acciones para lograr objetivos."
+    "explanation": "Bayesian Optimization construye un modelo probabilístico del objetivo para guiar búsquedas."
   },
   {
-    "question": "¿Qué arquitecturas sentó John von Neumann en computación?",
+    "question": "¿Qué diferencia hay entre L1 y L2? ",
     "options": [
-      "Arquitectura de programa almacenado (CPU, memoria, bus)",
-      "Arquitectura de microservicios",
-      "Arquitectura cliente-servidor",
-      "Arquitectura de grafos"
+      "L1 genera esparsidad; L2 penaliza magnitudes sin anular coeficientes",
+      "L2 causa esparsidad; L1 solo reduce coeficientes",
+      "Ambas tienen idéntica penalización cuadrática",
+      "L1 ajusta el learning rate automáticamente"
     ],
     "correct": 0,
-    "explanation": "La arquitectura de von Neumann define CPU, memoria y buses para ejecutar programas."
+    "explanation": "L1 añade penalización absoluta y puede llevar coeficientes a cero; L2 usa penalización cuadrática."
   },
   {
-    "question": "¿Qué implicación ética surge de la IA generativa?",
+    "question": "¿Para qué se emplea un conjunto de validación? ",
     "options": [
-      "Posible desinformación y deepfakes",
-      "Mejora de índices de clustering",
-      "Reducción de dimensionalidad automática",
-      "Control de versiones en Git"
+      "Ajustar hiperparámetros sin usar datos de prueba",
+      "Entrenar el modelo final completo",
+      "Generar nuevas muestras sintéticas",
+      "Evaluar el modelo después del test"
     ],
     "correct": 0,
-    "explanation": "Generative AI puede ser usada para falsificar audios, imágenes y texto."
+    "explanation": "La validación ayuda a elegir configuración sin sesgar la evaluación final."
   },
   {
-    "question": "¿Cuál es la diferencia entre IA débil y IA fuerte?",
+    "question": "¿Cómo funciona el descenso de gradiente estocástico (SGD) en optimización?",
     "options": [
-      "La IA fuerte tiene capacidad de razonamiento general; la IA débil no",
-      "La IA débil es más costosa que la IA fuerte",
-      "La IA fuerte no requiere datos",
-      "No existe IA fuerte"
+      "Actualiza pesos usando un solo ejemplo por iteración",
+      "Calcula el gradiente sobre todo el dataset completo",
+      "Usa la media móvil de todos los gradientes anteriores",
+      "Evalúa el gradiente en cada mini-batch y acumula errores"
     ],
     "correct": 0,
-    "explanation": "La IA fuerte busca inteligencia general, mientras que la débil se enfoca en tareas específicas."
+    "explanation": "SGD toma un único ejemplo (o mini-batch muy pequeño) por paso para actualizar los pesos, acelerando la convergencia en grandes datasets."
   },
   {
-    "question": "¿Qué avance marcó la era moderna de la IA (2000-presente)?",
+    "question": "¿Qué ventaja principal ofrece el optimizador Adam frente a SGD puro?",
     "options": [
-      "Explosión de Deep Learning y Big Data",
-      "Invención del perceptrón",
-      "Conferencia de Dartmouth",
-      "Primer programa de ajedrez"
+      "Combina momentos adaptativos y tasa de aprendizaje variable",
+      "Elimina completamente la necesidad de regularización L2",
+      "Usa promedio de gradientes sin momento alguno",
+      "Aplica descenso de gradiente solo en la primera epoch"
     ],
     "correct": 0,
-    "explanation": "La disponibilidad de datos masivos y mayor capacidad de cómputo impulsó redes profundas."
+    "explanation": "Adam adapta la tasa de aprendizaje usando estimaciones de primer y segundo momento, mejorando convergencia y estabilidad sin ajuste manual constante."
   },
   {
-    "question": "¿Qué es IBM Watson?",
+    "question": "¿Cuál es la función de la tasa de aprendizaje en el entrenamiento?",
     "options": [
-      "Plataforma de IA cognitiva que ganó Jeopardy! en 2011",
-      "Un robot humanoide",
-      "Una librería de Python para ML",
-      "Un dataset de imágenes"
+      "Escala el tamaño de cada actualización de pesos",
+      "Determina cuántas capas usa la red neuronal",
+      "Controla el número total de epochs ejecutadas",
+      "Define el tamaño del batch de datos usado"
     ],
     "correct": 0,
-    "explanation": "Watson usa NLP y ML para analizar datos y responder preguntas complejas."
+    "explanation": "La tasa de aprendizaje ajusta cuánto cambian los pesos en cada iteración del algoritmo de optimización."
   },
   {
-    "question": "¿Qué modeló Frank Rosenblatt en 1958?",
+    "question": "¿Qué mide la entropía cruzada en un problema de clasificación?",
     "options": [
-      "El Perceptrón, una de las primeras redes neuronales",
-      "La arquitectura de von Neumann",
-      "El Test de Turing",
-      "El algoritmo de Adam"
+      "La discrepancia entre distribuciones predicha y real",
+      "La distancia euclídea promedio entre vectores",
+      "La varianza explicada por componentes principales",
+      "El número de parámetros entrenables totales"
     ],
     "correct": 0,
-    "explanation": "El perceptrón es un modelo de neurona artificial que sienta las bases de las ANN."
+    "explanation": "La entropía cruzada cuantifica el error de predicción probabilística, penalizando predicciones seguras pero incorrectas."
   },
   {
-    "question": "¿Qué caracteriza el enfoque multidisciplinar de la IA?",
+    "question": "¿Qué diferencia hay entre aprendizaje supervisado y no supervisado?",
     "options": [
-      "Combina matemáticas, informática, filosofía y neurociencia",
-      "Solo usa estadística y gráficos",
-      "Solo se basa en hardware especializado",
-      "Es exclusivamente software libre"
+      "El primero usa etiquetas, el segundo no requiere etiquetas",
+      "El primero requiere redes profundas, el segundo no",
+      "El segundo siempre usa clustering jerárquico simple",
+      "Ambos usan refuerzo con recompensas señaladas"
     ],
     "correct": 0,
-    "explanation": "La IA integra conocimientos de varias disciplinas para comprender y replicar inteligencia."
+    "explanation": "En aprendizaje supervisado se entrena con datos etiquetados, mientras que en no supervisado el modelo descubre estructuras sin etiquetas previas."
   }
+  
 ]

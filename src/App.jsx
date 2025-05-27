@@ -118,8 +118,8 @@ export default function App() {
     if (i === shuffled[idx].correct) {
       setResults(r => {
         const copy = { ...r };
-        copy[temaId].correct += 0.5;
-        copy.all.correct     += 0.5;
+        copy[temaId].correct += 1;
+        copy.all.correct     += 1;
         return copy;
       });
     }
