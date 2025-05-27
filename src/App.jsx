@@ -157,8 +157,8 @@ export default function App() {
       const pct = total ? Math.round((correct / total) * 100) : 0;
       return (
         <div key={t.id} style={{ textAlign: 'center' }}>
-          <p className="nes-text is-primary">{t.label}</p>
-          <p className="nes-text">{correct}/{total} ({pct}%)</p>
+          <p className="nes-btn is-warning">{t.label}</p>
+          <p className="nes-btn">{correct}/{total} ({pct}%)</p>
         </div>
       );
     });
@@ -182,8 +182,8 @@ export default function App() {
         </div>
 
         <div style={{ marginTop: '2rem', width: '100%' }}>
-          <p className="nes-text is-success">General: {cAll}/{tAll} ({pctAll}%)</p>
-          <div className="grid-container" style={{ gap: '2rem', marginTop: '1rem' }}>
+          <p className="nes-btn">General: {cAll}/{tAll} ({pctAll}%)</p>
+          <div className="grid-container" style={{ gap: '3rem', marginTop: '1rem'}}>
             {themeStats}
           </div>
         </div>
