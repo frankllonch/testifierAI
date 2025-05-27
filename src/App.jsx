@@ -118,8 +118,8 @@ export default function App() {
     if (i === shuffled[idx].correct) {
       setResults(r => {
         const copy = { ...r };
-        copy[temaId].correct += 1;
-        copy.all.correct     += 1;
+        copy[temaId].correct += 0.5;
+        copy.all.correct     += 0.5;
         return copy;
       });
     }
@@ -187,7 +187,7 @@ export default function App() {
           <button className="nes-btn is-warning is-large custom-big-btn1" onClick={startExam}>exam</button>
         </div>
         <div style={{ marginTop:'2rem', width:'100%' }}>
-          <p className="nes-text is-success">General: {cAll}/{tAll} ({pctAll}%)</p>
+          <p className="nes-btn is-success">General: {cAll}/{tAll} ({pctAll}%)</p>
           <div className="grid-container" style={{ gap:'2rem', marginTop:'1rem' }}>
             {themeStats}
             {codeStats}
