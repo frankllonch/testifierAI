@@ -25,9 +25,12 @@ const temas = [
 
 // build an initial results object *once* on first render
 const makeEmptyResults = () => {
-  const allTotal = temas.reduce((sum, t) => sum + t.questions.length, 0);
+  const allTotal = temas.reduce((sum, t) => sum + t.questions.length, 0)
+    + questionsCode.length + questionsExam.length;
   const acc = { all: { correct: 0, total: allTotal } };
-  temas.forEach(t => (acc[t.id] = { correct: 0, total: t.questions.length }));
+  temas.forEach(t => acc[t.id] = { correct: 0, total: t.questions.length });
+  acc['code'] = { correct: 0, total: questionsCode.length };
+  acc['exam'] = { correct: 0, total: questionsExam.length };
   return acc;
 };
 
@@ -101,60 +104,44 @@ export default function App() {
 
   // ── SELECT ANSWER ─────────────────────────────────────────────
   const selectAnswer = i => {
-    if (answers[idx] != null) return;     // only once
+    if (answers[idx] != null) return;
     playClick();
     setAnswers(a => {
-      const c = [...a];
-      c[idx] = i;
-      return c;
+      const c = [...a]; c[idx] = i; return c;
     });
-    // figure out which tema bucket we’re in
     let temaId = 'all';
     const single = temas.find(t => t.questions === questions);
     if (single) temaId = single.id;
+    else if (questions === questionsCode) temaId = 'code';
+    else if (questions === questionsExam) temaId = 'exam';
 
-    // **only** increment once per correct answer
     if (i === shuffled[idx].correct) {
       setResults(r => {
         const copy = { ...r };
-        if (temaId !== 'all') {
-          copy[temaId].correct += 0.5;
-          copy.all.correct     += 0.5;
-        } else {
-          // “all” mode: only bump the overall once
-          copy.all.correct += 1;
-        }
+        copy[temaId].correct += 1;
+        copy.all.correct     += 1;
         return copy;
       });
     }
   };
 
   // ── NAVIGATION ────────────────────────────────────────────────
-  const prev = () => {
-    if (idx > 0) {
-      playClick();
-      setIdx(idx - 1);
-    }
-  };
+  const prev = () => { if (idx > 0) { playClick(); setIdx(idx - 1); }};
   const next = () => {
     if (idx < shuffled.length - 1) {
-      playClick();
-      setIdx(idx + 1);
+      playClick(); setIdx(idx + 1);
     } else {
       playFinish();
       setTimeout(() => setPage('start'), 400);
     }
   };
-  const toggleImmed = e => {
-    playClick();
-    setShowImmed(e.target.checked);
-  };
+  const toggleImmed = e => { playClick(); setShowImmed(e.target.checked); };
 
   // ── START PAGE ───────────────────────────────────────────────
   if (page === 'start') {
     const themeStats = temas.map(t => {
       const { correct, total } = results[t.id];
-      const pct = total ? Math.round((correct / total) * 100) : 0;
+      const pct = total ? Math.round(correct / total * 100) : 0;
       return (
         <div key={t.id} style={{ textAlign: 'center' }}>
           <p className="nes-btn is-warning">{t.label}</p>
@@ -162,29 +149,49 @@ export default function App() {
         </div>
       );
     });
+    // code & exam stats
+    const codeStats = (() => {
+      const { correct, total } = results['code'];
+      const pct = total ? Math.round(correct / total * 100) : 0;
+      return (
+        <div style={{ textAlign: 'center' }}>
+          <p className="nes-btn is-warning">Code</p>
+          <p className="nes-btn">{correct}/{total} ({pct}%)</p>
+        </div>
+      );
+    })();
+    const examStats = (() => {
+      const { correct, total } = results['exam'];
+      const pct = total ? Math.round(correct / total * 100) : 0;
+      return (
+        <div style={{ textAlign: 'center' }}>
+          <p className="nes-btn is-warning">Exam</p>
+          <p className="nes-btn">{correct}/{total} ({pct}%)</p>
+        </div>
+      );
+    })();
     const { correct: cAll, total: tAll } = results.all;
-    const pctAll = tAll ? Math.round((cAll / tAll) * 100) : 0;
+    const pctAll = tAll ? Math.round(cAll / tAll * 100) : 0;
 
     return (
-      <div className="nes-container with-title is-centered" style={{ minHeight: '100vh', padding: '2rem' }}>
+      <div className="nes-container with-title is-centered" style={{ minHeight:'100vh', padding:'2rem' }}>
         <p className="title">Elige un tema o modo</p>
-
         <div className="grid-container">
           {temas.map(t => (
             <button key={t.id}
               className="nes-btn is-primary is-large custom-big-btn"
-              onClick={() => startTopic(t.id)}
-            >{t.id}</button>
+              onClick={() => startTopic(t.id)}>{t.id}</button>
           ))}
-          <button className="nes-btn is-error is-large custom-big-btn1" onClick={startAll}>todo</button>
-          <button className="nes-btn is-dark is-large custom-big-btn1" onClick={startCode}>code</button>
+          <button className="nes-btn is-error   is-large custom-big-btn1" onClick={startAll}>todo</button>
+          <button className="nes-btn is-dark    is-large custom-big-btn1" onClick={startCode}>code</button>
           <button className="nes-btn is-warning is-large custom-big-btn1" onClick={startExam}>exam</button>
         </div>
-
-        <div style={{ marginTop: '2rem', width: '100%' }}>
-          <p className="nes-btn">General: {cAll}/{tAll} ({pctAll}%)</p>
-          <div className="grid-container" style={{ gap: '3rem', marginTop: '1rem'}}>
+        <div style={{ marginTop:'2rem', width:'100%' }}>
+          <p className="nes-text is-success">General: {cAll}/{tAll} ({pctAll}%)</p>
+          <div className="grid-container" style={{ gap:'2rem', marginTop:'1rem' }}>
             {themeStats}
+            {codeStats}
+            {examStats}
           </div>
         </div>
       </div>
@@ -192,71 +199,58 @@ export default function App() {
   }
 
   // ── QUIZ PAGE ────────────────────────────────────────────────
-  const qItem = shuffled[idx] || { question: '', options: [], correct: 0, explanation: '' };
+  const qItem = shuffled[idx] || { question:'', options:[], correct:0, explanation:'' };
   const totalCount = shuffled.length;
 
   return (
-    <div className="nes-container is-rounded" style={{ minHeight: '100vh', padding: '1rem' }}>
-      <div className="row between-xs middle-xs" style={{ marginBottom: '3rem' }}>
+    <div className="nes-container is-rounded" style={{ minHeight:'100vh', padding:'1rem' }}>
+      <div className="row between-xs middle-xs" style={{ marginBottom:'3rem' }}>
         <button className="nes-btn" onClick={goMenu}>Menú</button>
         <label>
-          <input type="checkbox"
-                 className="nes-checkbox is-light"
-                 checked={showImmed}
-                 onChange={toggleImmed} />
+          <input type="checkbox" className="nes-checkbox is-light" checked={showImmed} onChange={toggleImmed}/>
           <span>Mostrar inmediato</span>
         </label>
       </div>
-
-      <section className="nes-container is-rounded" style={{ margin: '2rem 0', backgroundColor: '#ffeb3b' }}>
-        <p className="title">Pregunta {idx + 1} / {totalCount}</p>
-        <p style={{
-          fontSize: '1.75rem',
-          lineHeight: 1.4,
-          whiteSpace: 'pre-wrap',
-          wordBreak: 'break-word'
-        }}>{qItem.question}</p>
+      <section className="nes-container is-rounded" style={{ margin:'2rem 0', backgroundColor:'#ffeb3b' }}>
+        <p className="title">Pregunta {idx+1} / {totalCount}</p>
+        <p style={{ fontSize:'1.75rem', lineHeight:1.4, whiteSpace:'pre-wrap', wordBreak:'break-word' }}>
+          {qItem.question}
+        </p>
       </section>
-
-      <div className="row" style={{ gap: '1rem' }}>
+      <div className="row" style={{ gap:'1rem' }}>
         {qItem.options.map((opt, i) => {
           const answered = answers[idx] != null;
           const correct  = i === qItem.correct;
-          const selected = i === answers[idx];
+          const sel      = i === answers[idx];
           let cls = 'nes-btn';
           if (!answered)    cls += ' is-primary';
           else if (correct) cls += ' is-success';
-          else if (selected)cls += ' is-error';
+          else if (sel)     cls += ' is-error';
           else               cls += ' is-disabled';
           return (
             <div key={i} className="col-xs-6">
-              <button
-                className={cls}
-                style={{ width: '100%', height: '5rem', fontSize: '1.25rem' }}
-                onClick={() => selectAnswer(i)}
-              >{opt}</button>
+              <button className={cls} style={{ width:'100%', height:'5rem', fontSize:'1.25rem' }} onClick={() => selectAnswer(i)}>
+                {opt}
+              </button>
             </div>
           );
         })}
       </div>
-
       {showImmed && answers[idx] != null && (
-        <div style={{ margin: '1rem 0' }}>
+        <div style={{ margin:'1rem 0' }}>
           <div className="nes-balloon from-left is-dark">
             {answers[idx] === qItem.correct
-              ? '✔️ ¡Correcto!'
-              : `❌ Incorrecto. Respuesta: ${qItem.options[qItem.correct]}`}
+              ? '✔️ ¡Correcto!' : `❌ Incorrecto. Respuesta: ${qItem.options[qItem.correct]}`}
           </div>
           {qItem.explanation && (
-            <p className="nes-text is-primary" style={{ marginTop: '0.5rem', fontSize: '1.25rem' }}>
+            <p className="nes-text is-primary" style={{ marginTop:'0.5rem', fontSize:'1.25rem' }}>
               {qItem.explanation}
             </p>
           )}
         </div>
       )}
-
-      <div className="row between-xs middle-xs" style={{ marginTop: '2rem' }}>
-        <button className="nes-btn" onClick={prev} disabled={idx === 0}>&lt;</button>
+      <div className="row between-xs middle-xs" style={{ marginTop:'2rem' }}>
+        <button className="nes-btn" onClick={prev} disabled={idx===0}>&lt;</button>
         <button className="nes-btn is-primary" onClick={next}>
           {idx < totalCount - 1 ? 'Siguiente' : 'Finalizar'}
         </button>

@@ -220,17 +220,6 @@
     "explanation": "Support bajo reduce robustez de métricas; se recomienda recolectar más datos."
   },
   {
-    "question": "Para evaluar un autoencoder, mides reconstruction error medio=0.05. ¿Qué uso práctico tiene este valor?",
-    "options": [
-      "Detectar anomalías cuando error > umbral",
-      "Clasificar hiperparámetros",
-      "Agrupar datos",
-      "Reducir dimensionalidad con PCA"
-    ],
-    "correct": 0,
-    "explanation": "Errores altos indican observaciones atípicas, útil en detección de anomalías."
-  },
-  {
     "question": "En un informe de regresión, R²=0.70. ¿Cómo interpretarías esto?",
     "options": [
       "El modelo explica 70% de la varianza",
@@ -251,17 +240,6 @@
     ],
     "correct": 0,
     "explanation": "En traducción automática, valores alrededor de 0.3 suelen considerarse base de comparación."
-  },
-  {
-    "question": "Para evaluar un clasificador de imágenes, ¿qué mide el Top-5 accuracy?",
-    "options": [
-      "Fracción de muestras donde la etiqueta verdadera está entre las 5 predicciones más probables",
-      "Precisión de top 5 clases",
-      "Recall de top 5 clases",
-      "Ángulo entre vectores de características"
-    ],
-    "correct": 0,
-    "explanation": "Top-5 accuracy amplía criterio de acierto considerando las 5 predicciones con mayor probabilidad."
   },
   {
     "question": "¿Qué es la Inteligencia Artificial Estrecha (IA Débil)?",
